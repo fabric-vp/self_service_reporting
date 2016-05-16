@@ -1,0 +1,11 @@
+<Report InfoGoVersion="12.1.142">
+  <AnalysisGrid ID="AgForThinkSpace" BatchSelection="@Constants.goBatchSelection~">
+    <WaitPage />
+    <GeneratedElementPluginCall PluginMethod="CleanAg" PluginName="QueryBuilderPlugin" PluginTypeName="QueryBuilderPlugin.QueryBuilderPlugin" JavaPluginVersion="DotNet" />
+  </AnalysisGrid>
+  <Division ID="divThinkSpaceContainer">
+    <Division ID="divSelectData" IdeDisplayStatus="Collapsed">
+      <Label Caption="Use Query Builder to build your Thinkspace" ID="lblSelectData" />
+    </Division>
+  </Division>
+</Report>

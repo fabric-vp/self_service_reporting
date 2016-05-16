@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Metadata MetadataBuilder="Logi Metadata Builder" BuilderVersion="1.0.0.14242">
+  <Table TableName="1Funny-Table" FriendlyName="1 Funny- Table" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="1TestID" FriendlyName="1 Test ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="1Test-Funny" FriendlyName="1 Test- Funny" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="More-test" FriendlyName="More-test" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="DataTypeRow" FriendlyName="Data Type Row" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="DataTypeRow2" FriendlyName="Data Type Row2" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="DataTypeVarChar" FriendlyName="Data Type Var Char" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Dates" FriendlyName="Dates" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="DataTypeNum" FriendlyName="Data Type Num" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="DatatTypeFloat" FriendlyName="Datat Type Float" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="cost_center" FriendlyName="cost_center" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="real_data_type" FriendlyName="real_data_type" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="And.More.Test" FriendlyName="And  More  Test" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="with space" FriendlyName="with space" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="clmn1+name" FriendlyName="clmn1 name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="clmn2+name" FriendlyName="clmn2 name" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="DataTypeBit" FriendlyName="Data Type Bit" DataType="Text" Format="True/False" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="HTMLColumn" FriendlyName="HTML Column" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="AdHocLog" FriendlyName="Ad Hoc Log" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="LogEntryID" FriendlyName="Log Entry ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ActionName" FriendlyName="Action Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ActionTimeStamp" FriendlyName="Action Time Stamp" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ActionDuration" FriendlyName="Action Duration" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="HostAddress" FriendlyName="Host Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SessionGUID" FriendlyName="Session GUID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UserName" FriendlyName="User Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="GroupName" FriendlyName="Group Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="AffectedUserName" FriendlyName="Affected User Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Affected" FriendlyName="Affected" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="AppCode" FriendlyName="App Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ConnectionLabel" FriendlyName="Connection Label" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ReportID" FriendlyName="Report ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ReportName" FriendlyName="Report Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ReportType" FriendlyName="Report Type" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Query" FriendlyName="Query" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SessionDuration" FriendlyName="Session Duration" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Alphabetical list of products" FriendlyName="Alphabetical list of products" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ProductID" FriendlyName="Product ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ProductName" FriendlyName="Product Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SupplierID" FriendlyName="Supplier ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CategoryID" FriendlyName="Category ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="QuantityPerUnit" FriendlyName="Quantity Per Unit" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UnitPrice" FriendlyName="Unit Price" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="UnitsInStock" FriendlyName="Units In Stock" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="UnitsOnOrder" FriendlyName="Units On Order" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ReorderLevel" FriendlyName="Reorder Level" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Discontinued" FriendlyName="Discontinued" DataType="Text" Format="True/False" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="CategoryName" FriendlyName="Category Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="AutomatedTestNorthwind" FriendlyName="Automated Test Northwind" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ReportID" FriendlyName="Report ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Definition" FriendlyName="Definition" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Categories" FriendlyName="Categories" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="CategoryID" FriendlyName="Category ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CategoryName" FriendlyName="Category Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Description" FriendlyName="Description" DataType="Text" Format="" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Category Sales for 1997" FriendlyName="Category Sales for 1997" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="CategoryName" FriendlyName="Category Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CategorySales" FriendlyName="Category Sales" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="CeCity" FriendlyName="Ce City" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="x" FriendlyName="x" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="UserID" FriendlyName="User ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Assessment" FriendlyName="Assessment" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Question" FriendlyName="Question" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Answer" FriendlyName="Answer" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Current Product List" FriendlyName="Current Product List" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ProductID" FriendlyName="Product ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ProductName" FriendlyName="Product Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Customer and Suppliers by City" FriendlyName="Customer and Suppliers by City" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="City" FriendlyName="City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CompanyName" FriendlyName="Company Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ContactName" FriendlyName="Contact Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Relationship" FriendlyName="Relationship" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="CustomerCustomerDemo" FriendlyName="Customer Customer Demo" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CustomerTypeID" FriendlyName="Customer Type ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="CustomerDemographics" FriendlyName="Customer Demographics" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="CustomerTypeID" FriendlyName="Customer Type ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CustomerDesc" FriendlyName="Customer Desc" DataType="Text" Format="" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Customers" FriendlyName="Customers" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CompanyName" FriendlyName="Company Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ContactName" FriendlyName="Contact Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ContactTitle" FriendlyName="Contact Title" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Address" FriendlyName="Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="City" FriendlyName="City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Region" FriendlyName="Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PostalCode" FriendlyName="Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Country" FriendlyName="Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Phone" FriendlyName="Phone" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Fax" FriendlyName="Fax" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Lng" FriendlyName="Lng" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Lat" FriendlyName="Lat" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Customers_old" FriendlyName="Customers_old" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CompanyName" FriendlyName="Company Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ContactName" FriendlyName="Contact Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ContactTitle" FriendlyName="Contact Title" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Address" FriendlyName="Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="City" FriendlyName="City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Region" FriendlyName="Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PostalCode" FriendlyName="Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Country" FriendlyName="Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Phone" FriendlyName="Phone" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Fax" FriendlyName="Fax" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="StateID" FriendlyName="State ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="URL" FriendlyName="URL" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Data_Type_Test" FriendlyName="Data_ Type_ Test" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ID" FriendlyName="ID" DataType="Text" Format="" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="Bigint" FriendlyName="Bigint" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Bit" FriendlyName="Bit" DataType="Text" Format="True/False" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="Char10" FriendlyName="Char10" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="DateTime" FriendlyName="Date Time" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Float" FriendlyName="Float" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Int" FriendlyName="Int" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Money" FriendlyName="Money" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="NChar10" FriendlyName="N Char10" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="NText" FriendlyName="N Text" DataType="Text" Format="" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="Numeric" FriendlyName="Numeric" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="NVarChar50" FriendlyName="N Var Char50" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Real" FriendlyName="Real" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="SmallDateTime" FriendlyName="Small Date Time" DataType="Date" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SmallInt" FriendlyName="Small Int" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="SmallMoney" FriendlyName="Small Money" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Text" FriendlyName="Text" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TimeStamp" FriendlyName="Time Stamp" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TinyInt" FriendlyName="Tiny Int" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="VarChar50" FriendlyName="Var Char50" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="DimProduct" FriendlyName="Dim Product" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ProductKey" FriendlyName="Product Key" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ProductAlternateKey" FriendlyName="Product Alternate Key" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ProductSubcategoryKey" FriendlyName="Product Subcategory Key" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="WeightUnitMeasureCode" FriendlyName="Weight Unit Measure Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SizeUnitMeasureCode" FriendlyName="Size Unit Measure Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EnglishProductName" FriendlyName="English Product Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SpanishProductName" FriendlyName="Spanish Product Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="FrenchProductName" FriendlyName="French Product Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="StandardCost" FriendlyName="Standard Cost" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="FinishedGoodsFlag" FriendlyName="Finished Goods Flag" DataType="Text" Format="True/False" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="Color" FriendlyName="Color" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SafetyStockLevel" FriendlyName="Safety Stock Level" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ReorderPoint" FriendlyName="Reorder Point" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ListPrice" FriendlyName="List Price" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Size" FriendlyName="Size" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SizeRange" FriendlyName="Size Range" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Weight" FriendlyName="Weight" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="DaysToManufacture" FriendlyName="Days To Manufacture" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ProductLine" FriendlyName="Product Line" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="DealerPrice" FriendlyName="Dealer Price" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Class" FriendlyName="Class" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Style" FriendlyName="Style" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ModelName" FriendlyName="Model Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EnglishDescription" FriendlyName="English Description" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="FrenchDescription" FriendlyName="French Description" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ChineseDescription" FriendlyName="Chinese Description" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ArabicDescription" FriendlyName="Arabic Description" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="HebrewDescription" FriendlyName="Hebrew Description" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ThaiDescription" FriendlyName="Thai Description" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="StartDate" FriendlyName="Start Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EndDate" FriendlyName="End Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Status" FriendlyName="Status" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="dtproperties" FriendlyName="dtproperties" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="id" FriendlyName="id" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="objectid" FriendlyName="objectid" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="property" FriendlyName="property" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="value" FriendlyName="value" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="uvalue" FriendlyName="uvalue" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="version" FriendlyName="version" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Employee_Entitlement" FriendlyName="Employee_ Entitlement" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="EmployeeNo" FriendlyName="Employee No" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Entitlement_Type_Code" FriendlyName="Entitlement_ Type_ Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Entitlement_Type_Desc" FriendlyName="Entitlement_ Type_ Desc" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Entitlement_Accrued" FriendlyName="Entitlement_ Accrued" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Entitlement_Used" FriendlyName="Entitlement_ Used" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Entitlement_Carried_Over" FriendlyName="Entitlement_ Carried_ Over" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Entitlement_Adjustments" FriendlyName="Entitlement_ Adjustments" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Entitlement_Balance" FriendlyName="Entitlement_ Balance" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Last_Update" FriendlyName="Last_ Update" DataType="Date" Format="Short Date" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Employee_Entitlement_View" FriendlyName="Employee_ Entitlement_ View" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="EmployeeNo" FriendlyName="Employee No" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Entitlement_Type_Code" FriendlyName="Entitlement_ Type_ Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Entitlement_Type_Desc" FriendlyName="Entitlement_ Type_ Desc" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Entitlement_Accrued" FriendlyName="Entitlement_ Accrued" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Entitlement_Used" FriendlyName="Entitlement_ Used" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Entitlement_Carried_Over" FriendlyName="Entitlement_ Carried_ Over" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Entitlement_Adjustments" FriendlyName="Entitlement_ Adjustments" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Entitlement_Balance" FriendlyName="Entitlement_ Balance" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Last_Update" FriendlyName="Last_ Update" DataType="Date" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EmployeeNumber" FriendlyName="Employee Number" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="EmployeeHomeReports" FriendlyName="Employee Home Reports" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="EmployeeTitle" FriendlyName="Employee Title" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="HomeReport" FriendlyName="Home Report" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="EmployeeOrders" FriendlyName="Employee Orders" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="LastName" FriendlyName="Last Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="FirstName" FriendlyName="First Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="OrderDate" FriendlyName="Order Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="RequiredDate" FriendlyName="Required Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShippedDate" FriendlyName="Shipped Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipVia" FriendlyName="Ship Via" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Freight" FriendlyName="Freight" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ShipName" FriendlyName="Ship Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipAddress" FriendlyName="Ship Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipCity" FriendlyName="Ship City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipRegion" FriendlyName="Ship Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipPostalCode" FriendlyName="Ship Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipCountry" FriendlyName="Ship Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="EmployeeRel" FriendlyName="Employee Rel" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="LastName" FriendlyName="Last Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="FirstName" FriendlyName="First Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Title" FriendlyName="Title" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TitleOfCourtesy" FriendlyName="Title Of Courtesy" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SomeID" FriendlyName="Some ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Employees" FriendlyName="Employees" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="LastName" FriendlyName="Last Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="FirstName" FriendlyName="First Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Title" FriendlyName="Title" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TitleOfCourtesy" FriendlyName="Title Of Courtesy" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="BirthDate" FriendlyName="Birth Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="HireDate" FriendlyName="Hire Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Address" FriendlyName="Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="City" FriendlyName="City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Region" FriendlyName="Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PostalCode" FriendlyName="Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Country" FriendlyName="Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="HomePhone" FriendlyName="Home Phone" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Extension" FriendlyName="Extension" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Notes" FriendlyName="Notes" DataType="Text" Format="" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="ReportsTo" FriendlyName="Reports To" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="PhotoPath" FriendlyName="Photo Path" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="new" FriendlyName="new" DataType="Text" Format="" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="Quota" FriendlyName="Quota" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="AdHocUserName" FriendlyName="Ad Hoc User Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="StateID" FriendlyName="State ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="EmployeeTerritories" FriendlyName="Employee Territories" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="TerritoryID" FriendlyName="Territory ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="FusionMapContinents" FriendlyName="Fusion Map Continents" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="Continent" FriendlyName="Continent" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Abbreviation" FriendlyName="Abbreviation" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Value" FriendlyName="Value" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="FusionMapStates" FriendlyName="Fusion Map States" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="State" FriendlyName="State" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Abbreviation" FriendlyName="Abbreviation" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Value" FriendlyName="Value" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Invoices" FriendlyName="Invoices" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ShipName" FriendlyName="Ship Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipAddress" FriendlyName="Ship Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipCity" FriendlyName="Ship City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipRegion" FriendlyName="Ship Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipPostalCode" FriendlyName="Ship Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipCountry" FriendlyName="Ship Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CustomerName" FriendlyName="Customer Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Address" FriendlyName="Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="City" FriendlyName="City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Region" FriendlyName="Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PostalCode" FriendlyName="Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Country" FriendlyName="Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Salesperson" FriendlyName="Salesperson" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="OrderDate" FriendlyName="Order Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="RequiredDate" FriendlyName="Required Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShippedDate" FriendlyName="Shipped Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipperName" FriendlyName="Shipper Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ProductID" FriendlyName="Product ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ProductName" FriendlyName="Product Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UnitPrice" FriendlyName="Unit Price" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Quantity" FriendlyName="Quantity" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Discount" FriendlyName="Discount" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ExtendedPrice" FriendlyName="Extended Price" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Freight" FriendlyName="Freight" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Language" FriendlyName="Language" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="EngValue" FriendlyName="Eng Value" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ChineseValue" FriendlyName="Chinese Value" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="lgxRole" FriendlyName="lgx Role" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="APP_CODE" FriendlyName="APP_CODE" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ROLE_ID" FriendlyName="ROLE_ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ROLE" FriendlyName="ROLE" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="DEL_FLAG" FriendlyName="DEL_FLAG" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UPDATE_USER" FriendlyName="UPDATE_USER" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UPDATE_TIME" FriendlyName="UPDATE_TIME" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="lgxUser" FriendlyName="lgx User" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="APP_CODE" FriendlyName="APP_CODE" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="USER_ID" FriendlyName="USER_ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="USER_NAME" FriendlyName="USER_NAME" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PASSWORD" FriendlyName="PASSWORD" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="STATUS" FriendlyName="STATUS" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TOUT_SEC" FriendlyName="TOUT_SEC" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="PW_CHGSTAT" FriendlyName="PW_CHGSTAT" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PW_EXP" FriendlyName="PW_EXP" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PW_EXP_PER" FriendlyName="PW_EXP_PER" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="LOGON_CNT" FriendlyName="LOGON_CNT" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="PW_EXP_CNT" FriendlyName="PW_EXP_CNT" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="PW_HIST" FriendlyName="PW_HIST" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PWD_RUL_ID" FriendlyName="PWD_RUL_ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="DEL_FLAG" FriendlyName="DEL_FLAG" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PRIMARY_ROLE_ID" FriendlyName="PRIMARY_ROLE_ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="UPDATE_USER" FriendlyName="UPDATE_USER" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UPDATE_TIME" FriendlyName="UPDATE_TIME" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="lgxUserRole" FriendlyName="lgx User Role" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="USER_ROLE_ID" FriendlyName="USER_ROLE_ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="USER_ID" FriendlyName="USER_ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ROLE_ID" FriendlyName="ROLE_ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="UPDATE_USER" FriendlyName="UPDATE_USER" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UPDATE_TIME" FriendlyName="UPDATE_TIME" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Order Details" FriendlyName="Order Details" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ProductID" FriendlyName="Product ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="UnitPrice" FriendlyName="Unit Price" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Quantity" FriendlyName="Quantity" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Discount" FriendlyName="Discount" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Order Details Extended" FriendlyName="Order Details Extended" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ProductID" FriendlyName="Product ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ProductName" FriendlyName="Product Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UnitPrice" FriendlyName="Unit Price" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Quantity" FriendlyName="Quantity" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Discount" FriendlyName="Discount" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ExtendedPrice" FriendlyName="Extended Price" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Order Subtotals" FriendlyName="Order Subtotals" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Subtotal" FriendlyName="Subtotal" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Orders" FriendlyName="Orders" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="OrderDate" FriendlyName="Order Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="RequiredDate" FriendlyName="Required Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShippedDate" FriendlyName="Shipped Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipVia" FriendlyName="Ship Via" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Freight" FriendlyName="Freight" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ShipName" FriendlyName="Ship Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipAddress" FriendlyName="Ship Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipCity" FriendlyName="Ship City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipRegion" FriendlyName="Ship Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipPostalCode" FriendlyName="Ship Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipCountry" FriendlyName="Ship Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Invoiced" FriendlyName="Invoiced" DataType="Text" Format="True/False" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="AdHocUserName" FriendlyName="Ad Hoc User Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Orders Qry" FriendlyName="Orders Qry" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="OrderDate" FriendlyName="Order Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="RequiredDate" FriendlyName="Required Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShippedDate" FriendlyName="Shipped Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipVia" FriendlyName="Ship Via" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Freight" FriendlyName="Freight" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ShipName" FriendlyName="Ship Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipAddress" FriendlyName="Ship Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipCity" FriendlyName="Ship City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipRegion" FriendlyName="Ship Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipPostalCode" FriendlyName="Ship Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipCountry" FriendlyName="Ship Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CompanyName" FriendlyName="Company Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Address" FriendlyName="Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="City" FriendlyName="City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Region" FriendlyName="Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PostalCode" FriendlyName="Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Country" FriendlyName="Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="OrdersBackup" FriendlyName="Orders Backup" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="OrderDate" FriendlyName="Order Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="RequiredDate" FriendlyName="Required Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShippedDate" FriendlyName="Shipped Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipVia" FriendlyName="Ship Via" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Freight" FriendlyName="Freight" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ShipName" FriendlyName="Ship Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipAddress" FriendlyName="Ship Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipCity" FriendlyName="Ship City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipRegion" FriendlyName="Ship Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipPostalCode" FriendlyName="Ship Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipCountry" FriendlyName="Ship Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="LargeText" FriendlyName="Large Text" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="LargeText2" FriendlyName="Large Text2" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="LargeText3" FriendlyName="Large Text3" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="GUIDs" FriendlyName="GUI Ds" DataType="Text" Format="" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+  </Table>
+  <Table TableName="OrdersIncomplete" FriendlyName="Orders Incomplete" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="OrderDate" FriendlyName="Order Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipVia" FriendlyName="Ship Via" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Freight" FriendlyName="Freight" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="OrdersIncompleteMetaData" FriendlyName="Orders Incomplete Meta Data" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="DataType" FriendlyName="Data Type" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="FriendlyName" FriendlyName="Friendly Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ColumnName" FriendlyName="Column Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TableName" FriendlyName="Table Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="OrdersMetaData" FriendlyName="Orders Meta Data" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="DataType" FriendlyName="Data Type" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="FriendlyName" FriendlyName="Friendly Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ColumnName" FriendlyName="Column Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TableName" FriendlyName="Table Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Product Sales for 1997" FriendlyName="Product Sales for 1997" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="CategoryName" FriendlyName="Category Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ProductName" FriendlyName="Product Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ProductSales" FriendlyName="Product Sales" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Products" FriendlyName="Products" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ProductID" FriendlyName="Product ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ProductName" FriendlyName="Product Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SupplierID" FriendlyName="Supplier ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CategoryID" FriendlyName="Category ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="QuantityPerUnit" FriendlyName="Quantity Per Unit" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UnitPrice" FriendlyName="Unit Price" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="UnitsInStock" FriendlyName="Units In Stock" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="UnitsOnOrder" FriendlyName="Units On Order" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ReorderLevel" FriendlyName="Reorder Level" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Discontinued" FriendlyName="Discontinued" DataType="Text" Format="True/False" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Products Above Average Price" FriendlyName="Products Above Average Price" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ProductName" FriendlyName="Product Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UnitPrice" FriendlyName="Unit Price" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Products by Category" FriendlyName="Products by Category" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="CategoryName" FriendlyName="Category Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ProductName" FriendlyName="Product Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="QuantityPerUnit" FriendlyName="Quantity Per Unit" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UnitsInStock" FriendlyName="Units In Stock" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Discontinued" FriendlyName="Discontinued" DataType="Text" Format="True/False" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+  </Table>
+  <Table TableName="qryCategoryRegionSales" FriendlyName="qry Category Region Sales" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="Eastern" FriendlyName="Eastern" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Western" FriendlyName="Western" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Northern" FriendlyName="Northern" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Southern" FriendlyName="Southern" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CategoryName" FriendlyName="Category Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="qryEmployeeRegions" FriendlyName="qry Employee Regions" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="RegionID" FriendlyName="Region ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="RegionDescription" FriendlyName="Region Description" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="qryEmployeeReportsTo" FriendlyName="qry Employee Reports To" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ReportsTo" FriendlyName="Reports To" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Steps" FriendlyName="Steps" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="qryOrderTotalsByMonth" FriendlyName="qry Order Totals By Month" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ODate" FriendlyName="O Date" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="OrderTotals" FriendlyName="Order Totals" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="OrderKey" FriendlyName="Order Key" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="qryUserDetails" FriendlyName="qry User Details" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="UserType" FriendlyName="User Type" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UserID" FriendlyName="User ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Username" FriendlyName="Username" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Password" FriendlyName="Password" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="qryUserRoles" FriendlyName="qry User Roles" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="Role" FriendlyName="Role" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UserID" FriendlyName="User ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Quarterly Orders" FriendlyName="Quarterly Orders" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CompanyName" FriendlyName="Company Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="City" FriendlyName="City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Country" FriendlyName="Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Region" FriendlyName="Region" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="RegionID" FriendlyName="Region ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="RegionDescription" FriendlyName="Region Description" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="RelationTest" FriendlyName="Relation Test" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="RelTestID" FriendlyName="Rel Test ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="LastName" FriendlyName="Last Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="FirstName" FriendlyName="First Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="FullName" FriendlyName="Full Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="RelOrder" FriendlyName="Rel Order" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="FirstName" FriendlyName="First Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="LastName" FriendlyName="Last Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Active" FriendlyName="Active" DataType="Text" Format="True/False" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+  </Table>
+  <Table TableName="ReportDefinitions" FriendlyName="Report Definitions" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="DefinitionID" FriendlyName="Definition ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="FileName" FriendlyName="File Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Definition" FriendlyName="Definition" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="ReportDefs" FriendlyName="Report Defs" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ReportID" FriendlyName="Report ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Definition" FriendlyName="Definition" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Sales by Category" FriendlyName="Sales by Category" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="CategoryID" FriendlyName="Category ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CategoryName" FriendlyName="Category Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ProductName" FriendlyName="Product Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ProductSales" FriendlyName="Product Sales" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Sales Totals by Amount" FriendlyName="Sales Totals by Amount" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="SaleAmount" FriendlyName="Sale Amount" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CompanyName" FriendlyName="Company Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShippedDate" FriendlyName="Shipped Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="SampleRoles" FriendlyName="Sample Roles" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="RoleID" FriendlyName="Role ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="RoleName" FriendlyName="Role Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Shippers" FriendlyName="Shippers" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ShipperID" FriendlyName="Shipper ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CompanyName" FriendlyName="Company Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Phone" FriendlyName="Phone" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="StateID" FriendlyName="State ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="SingleBase" FriendlyName="Single Base" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ID1" FriendlyName="ID1" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ID2" FriendlyName="ID2" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Text" FriendlyName="Text" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="SingleRelated" FriendlyName="Single Related" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ID1" FriendlyName="ID1" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ID2" FriendlyName="ID2" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Text" FriendlyName="Text" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="SQLParams" FriendlyName="SQL Params" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ID" FriendlyName="ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="FirstName" FriendlyName="First Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="LastName" FriendlyName="Last Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="GroupID" FriendlyName="Group ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Cost" FriendlyName="Cost" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="States" FriendlyName="States" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="StateID" FriendlyName="State ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="State" FriendlyName="State" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="StateAbbrv" FriendlyName="State Abbrv" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Summary of Sales by Quarter" FriendlyName="Summary of Sales by Quarter" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ShippedDate" FriendlyName="Shipped Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Subtotal" FriendlyName="Subtotal" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Summary of Sales by Year" FriendlyName="Summary of Sales by Year" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ShippedDate" FriendlyName="Shipped Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Subtotal" FriendlyName="Subtotal" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="Suppliers" FriendlyName="Suppliers" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="SupplierID" FriendlyName="Supplier ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CompanyName" FriendlyName="Company Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ContactName" FriendlyName="Contact Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ContactTitle" FriendlyName="Contact Title" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Address" FriendlyName="Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="City" FriendlyName="City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Region" FriendlyName="Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PostalCode" FriendlyName="Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Country" FriendlyName="Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Phone" FriendlyName="Phone" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Fax" FriendlyName="Fax" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="HomePage" FriendlyName="Home Page" DataType="Text" Format="" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="StateID" FriendlyName="State ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="sysdiagrams" FriendlyName="sysdiagrams" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="name" FriendlyName="name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="principal_id" FriendlyName="principal_id" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="diagram_id" FriendlyName="diagram_id" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="version" FriendlyName="version" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="TableTest" FriendlyName="Table Test" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ReportID" FriendlyName="Report ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Definition" FriendlyName="Definition" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="DatatTypeFloat" FriendlyName="Datat Type Float" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="DataTypeDecimal" FriendlyName="Data Type Decimal" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="DataTypeReal" FriendlyName="Data Type Real" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="DataTypeSmallInt" FriendlyName="Data Type Small Int" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="DataTypeBigInt" FriendlyName="Data Type Big Int" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="DataTypeTinyInt" FriendlyName="Data Type Tiny Int" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="SmallDateTime" FriendlyName="Small Date Time" DataType="Date" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="DataTypeTime" FriendlyName="Data Type Time" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="BitType" FriendlyName="Bit Type" DataType="Text" Format="True/False" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="Column1" FriendlyName="Column1" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Column2" FriendlyName="Column2" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="TableWithTokens" FriendlyName="Table With Tokens" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="Column1" FriendlyName="Column1" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="TASKS" FriendlyName="TASKS" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="TASKID" FriendlyName="TASKID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="APPLICATIONID" FriendlyName="APPLICATIONID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TASKNAME" FriendlyName="TASKNAME" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CUSTOMCOLUMN1" FriendlyName="CUSTOMCOLUMN1" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CUSTOMCOLUMN2" FriendlyName="CUSTOMCOLUMN2" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ISDISABLED" FriendlyName="ISDISABLED" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SCHEDULEXML" FriendlyName="SCHEDULEXML" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PROCESSXML" FriendlyName="PROCESSXML" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TIMECREATED" FriendlyName="TIMECREATED" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TIMEMODIFIED" FriendlyName="TIMEMODIFIED" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TIMELASTRUN" FriendlyName="TIMELASTRUN" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TIMENEXTRUN" FriendlyName="TIMENEXTRUN" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="WASSUCCESSFULLASTRUN" FriendlyName="WASSUCCESSFULLASTRUN" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TASKRESULTS" FriendlyName="TASKRESULTS" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="RUNAS" FriendlyName="RUNAS" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ISRUNNING" FriendlyName="ISRUNNING" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TIMERUNNING" FriendlyName="TIMERUNNING" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="Territories" FriendlyName="Territories" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="TerritoryID" FriendlyName="Territory ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TerritoryDescription" FriendlyName="Territory Description" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="RegionID" FriendlyName="Region ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="test" FriendlyName="test" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="OrderID" FriendlyName="Order ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="OrderDate" FriendlyName="Order Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="RequiredDate" FriendlyName="Required Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShippedDate" FriendlyName="Shipped Date" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipVia" FriendlyName="Ship Via" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Freight" FriendlyName="Freight" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ShipName" FriendlyName="Ship Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipAddress" FriendlyName="Ship Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipCity" FriendlyName="Ship City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipRegion" FriendlyName="Ship Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipPostalCode" FriendlyName="Ship Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ShipCountry" FriendlyName="Ship Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Invoiced" FriendlyName="Invoiced" DataType="Text" Format="True/False" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="AdHocUserName" FriendlyName="Ad Hoc User Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="TestChart" FriendlyName="Test Chart" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="a" FriendlyName="a" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="b" FriendlyName="b" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="c" FriendlyName="c" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="d" FriendlyName="d" DataType="Date" Format="Short Date" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="TestGUID" FriendlyName="Test GUID" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="GID" FriendlyName="GID" DataType="Text" Format="" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="c1" FriendlyName="c1" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="c2" FriendlyName="c2" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="TestLog" FriendlyName="Test Log" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="EventName" FriendlyName="Event Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ElementID" FriendlyName="Element ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EventTime" FriendlyName="Event Time" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EventTimePrecise" FriendlyName="Event Time Precise" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="EventDuration" FriendlyName="Event Duration" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="SQLCommand" FriendlyName="SQL Command" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CountRows" FriendlyName="Count Rows" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="ReportID" FriendlyName="Report ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SPParameters" FriendlyName="SP Parameters" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="TestOracle" FriendlyName="Test Oracle" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="MTH" FriendlyName="MTH" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="AP_CLOSE_DATE" FriendlyName="AP_CLOSE_DATE" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="LAST_CHANGE_BY" FriendlyName="LAST_CHANGE_BY" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TEST" FriendlyName="TEST" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="TestSpaces" FriendlyName="Test Spaces" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="Account Location Budget" FriendlyName="Account Location Budget" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Account Location Country" FriendlyName="Account Location Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Account Location City" FriendlyName="Account Location City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Remove1" FriendlyName="Remove1" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="504Count" FriendlyName="504 Count" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="504Test" FriendlyName="504 Test" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="TestView1" FriendlyName="Test View1" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="CustomerID" FriendlyName="Customer ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="CompanyName" FriendlyName="Company Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ContactName" FriendlyName="Contact Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ContactTitle" FriendlyName="Contact Title" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Address" FriendlyName="Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="City" FriendlyName="City" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Region" FriendlyName="Region" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="PostalCode" FriendlyName="Postal Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Country" FriendlyName="Country" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Phone" FriendlyName="Phone" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Fax" FriendlyName="Fax" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="StateID" FriendlyName="State ID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="View GUID" FriendlyName="View GUID" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="GID" FriendlyName="GID" DataType="Text" Format="" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+    <Column ColumnName="c1" FriendlyName="c1" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="c2" FriendlyName="c2" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="VIEW1" FriendlyName="VIEW1" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="CategoryID" FriendlyName="Category ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="CategoryName" FriendlyName="Category Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Description" FriendlyName="Description" DataType="Text" Format="" SecurityRightID="" NoGrouping="True" NoAggregation="True" NoSorting="True" HideColumn="False" />
+  </Table>
+  <Table TableName="vw_Entitlement" FriendlyName="vw_ Entitlement" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="EmployeeNo" FriendlyName="Employee No" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Entitlement_Type_Code" FriendlyName="Entitlement_ Type_ Code" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Entitlement_Type_Desc" FriendlyName="Entitlement_ Type_ Desc" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Entitlement_Accrued" FriendlyName="Entitlement_ Accrued" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Entitlement_Used" FriendlyName="Entitlement_ Used" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Entitlement_Carried_Over" FriendlyName="Entitlement_ Carried_ Over" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Entitlement_Adjustments" FriendlyName="Entitlement_ Adjustments" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Entitlement_Balance" FriendlyName="Entitlement_ Balance" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="Last_Update" FriendlyName="Last_ Update" DataType="Date" Format="Short Date" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <Table TableName="vw_LogiXMLTestReportOrderEmployeeBonus" FriendlyName="vw_ Logi XML Test Report Order Employee Bonus" TableType="V" HideTable="False" SecurityRightID="">
+    <Column ColumnName="EmployeeID" FriendlyName="Employee ID" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="LastName" FriendlyName="Last Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="FirstName" FriendlyName="First Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="TotFreight" FriendlyName="Tot Freight" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="TotalOrders" FriendlyName="Total Orders" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="TotalDiscLevel" FriendlyName="Total Disc Level" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="EmployeeBonus" FriendlyName="Employee Bonus" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+  </Table>
+  <Table TableName="xyz" FriendlyName="xyz" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="ActionName" FriendlyName="Action Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ActionTimeStamp" FriendlyName="Action Time Stamp" DataType="DateTime" Format="Short Date" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ActionDuration" FriendlyName="Action Duration" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="HostAddress" FriendlyName="Host Address" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SessionGUID" FriendlyName="Session GUID" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="UserName" FriendlyName="User Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="GroupName" FriendlyName="Group Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ConnectionLabel" FriendlyName="Connection Label" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ReportName" FriendlyName="Report Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="ReportType" FriendlyName="Report Type" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="Query" FriendlyName="Query" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+    <Column ColumnName="SessionDuration" FriendlyName="Session Duration" DataType="Number" Format="General Number" SecurityRightID="" NoGrouping="True" HideColumn="False" />
+    <Column ColumnName="AffectedUserName" FriendlyName="Affected User Name" DataType="Text" Format="" SecurityRightID="" HideColumn="False" />
+  </Table>
+  <JoinRelation FromTableName="Suppliers" ToTableName="Products" Relation="Inner Join" FriendlyName="Suppliers - Products" Explanation="" JoinRelationID="8e2ac985-3ca0-4456-be49-8028efea00b6" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="SupplierID" ToColumnName="SupplierID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Suppliers" ToTableName="Products" Relation="Left Outer Join" FriendlyName="Suppliers -&gt; Products" Explanation="" JoinRelationID="2392741f-ffa2-40d3-b889-33923c928210" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="SupplierID" ToColumnName="SupplierID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Products" ToTableName="Suppliers" Relation="Inner Join" FriendlyName="Products - Suppliers" Explanation="" JoinRelationID="cc4f5633-d83a-403d-8cab-4daab604c1b9" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="SupplierID" ToColumnName="SupplierID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Products" ToTableName="Suppliers" Relation="Left Outer Join" FriendlyName="Products -&gt; Suppliers" Explanation="" JoinRelationID="5835ba58-a0ae-4813-9908-4a753f3e081f" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="SupplierID" ToColumnName="SupplierID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Employees" ToTableName="EmployeeTerritories" Relation="Inner Join" FriendlyName="Employees - EmployeeTerritories" Explanation="" JoinRelationID="75f72245-ecb4-4c15-ba14-f5f0736aa029" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="EmployeeID" ToColumnName="EmployeeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Employees" ToTableName="EmployeeTerritories" Relation="Left Outer Join" FriendlyName="Employees -&gt; EmployeeTerritories" Explanation="" JoinRelationID="dbb27df6-38fc-4f89-80d8-882ff13c461d" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="EmployeeID" ToColumnName="EmployeeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="EmployeeTerritories" ToTableName="Employees" Relation="Inner Join" FriendlyName="EmployeeTerritories - Employees" Explanation="" JoinRelationID="0413d373-c2ce-4691-b9ee-050b1e328726" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="EmployeeID" ToColumnName="EmployeeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="EmployeeTerritories" ToTableName="Employees" Relation="Left Outer Join" FriendlyName="EmployeeTerritories -&gt; Employees" Explanation="" JoinRelationID="0ff877d7-ef8c-4d06-9b93-bb7b50fc0faa" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="EmployeeID" ToColumnName="EmployeeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Employees" ToTableName="Orders" Relation="Inner Join" FriendlyName="Employees - Orders" Explanation="" JoinRelationID="402debf9-3c15-416d-ad7b-973176936605" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="EmployeeID" ToColumnName="EmployeeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Employees" ToTableName="Orders" Relation="Left Outer Join" FriendlyName="Employees -&gt; Orders" Explanation="" JoinRelationID="7e69d065-7e3e-423c-808e-4ce41fea6230" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="EmployeeID" ToColumnName="EmployeeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Orders" ToTableName="Employees" Relation="Inner Join" FriendlyName="Orders - Employees" Explanation="" JoinRelationID="b644b473-1952-4c02-bac2-83b220e76d94" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="EmployeeID" ToColumnName="EmployeeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Orders" ToTableName="Employees" Relation="Left Outer Join" FriendlyName="Orders -&gt; Employees" Explanation="" JoinRelationID="f7c889da-291d-4916-bea0-231edaefc3bf" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="EmployeeID" ToColumnName="EmployeeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Products" ToTableName="Order Details" Relation="Inner Join" FriendlyName="Products - Order Details" Explanation="" JoinRelationID="000bf408-d99a-4378-b11f-4ddd622a3682" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="ProductID" ToColumnName="ProductID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Products" ToTableName="Order Details" Relation="Left Outer Join" FriendlyName="Products -&gt; Order Details" Explanation="" JoinRelationID="9252e4f9-3695-47b0-a2cd-16850c6ce125" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="ProductID" ToColumnName="ProductID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Order Details" ToTableName="Products" Relation="Inner Join" FriendlyName="Order Details - Products" Explanation="" JoinRelationID="85f5ab8c-4cf5-4d00-bce2-5474cf22944e" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="ProductID" ToColumnName="ProductID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Order Details" ToTableName="Products" Relation="Left Outer Join" FriendlyName="Order Details -&gt; Products" Explanation="" JoinRelationID="c7200430-afa6-436d-80d1-b7a1e67f0d8c" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="ProductID" ToColumnName="ProductID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="CustomerDemographics" ToTableName="CustomerCustomerDemo" Relation="Inner Join" FriendlyName="CustomerDemographics - CustomerCustomerDemo" Explanation="" JoinRelationID="b8a247b7-f514-4ba0-8777-d04ff9838553" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CustomerTypeID" ToColumnName="CustomerTypeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="CustomerDemographics" ToTableName="CustomerCustomerDemo" Relation="Left Outer Join" FriendlyName="CustomerDemographics -&gt; CustomerCustomerDemo" Explanation="" JoinRelationID="cf581191-4f96-4f29-8c38-04bd3a15de5f" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CustomerTypeID" ToColumnName="CustomerTypeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="CustomerCustomerDemo" ToTableName="CustomerDemographics" Relation="Inner Join" FriendlyName="CustomerCustomerDemo - CustomerDemographics" Explanation="" JoinRelationID="681f8111-c988-4f69-9ab1-ec4543b6333d" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CustomerTypeID" ToColumnName="CustomerTypeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="CustomerCustomerDemo" ToTableName="CustomerDemographics" Relation="Left Outer Join" FriendlyName="CustomerCustomerDemo -&gt; CustomerDemographics" Explanation="" JoinRelationID="47493cfb-6b68-4aef-8cfc-721424150435" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CustomerTypeID" ToColumnName="CustomerTypeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Region" ToTableName="Territories" Relation="Inner Join" FriendlyName="Region - Territories" Explanation="" JoinRelationID="4a69cf61-9247-47af-9c89-7c0afa7fc45a" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="RegionID" ToColumnName="RegionID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Region" ToTableName="Territories" Relation="Left Outer Join" FriendlyName="Region -&gt; Territories" Explanation="" JoinRelationID="5175dc05-3f2d-4cfb-adab-71ead2923573" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="RegionID" ToColumnName="RegionID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Territories" ToTableName="Region" Relation="Inner Join" FriendlyName="Territories - Region" Explanation="" JoinRelationID="5a6f8d5e-1973-4065-8589-e6d793463ca1" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="RegionID" ToColumnName="RegionID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Territories" ToTableName="Region" Relation="Left Outer Join" FriendlyName="Territories -&gt; Region" Explanation="" JoinRelationID="b0b4755e-0e47-4706-bca5-510c9134c3b7" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="RegionID" ToColumnName="RegionID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Territories" ToTableName="EmployeeTerritories" Relation="Inner Join" FriendlyName="Territories - EmployeeTerritories" Explanation="" JoinRelationID="6e778dde-0e01-42ef-be27-ee30f2016450" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="TerritoryID" ToColumnName="TerritoryID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Territories" ToTableName="EmployeeTerritories" Relation="Left Outer Join" FriendlyName="Territories -&gt; EmployeeTerritories" Explanation="" JoinRelationID="01f8f291-b1d6-4cbb-930b-6b7415fd6ac3" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="TerritoryID" ToColumnName="TerritoryID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="EmployeeTerritories" ToTableName="Territories" Relation="Inner Join" FriendlyName="EmployeeTerritories - Territories" Explanation="" JoinRelationID="8f62925a-b03f-450b-9481-8a8d22e61b85" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="TerritoryID" ToColumnName="TerritoryID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="EmployeeTerritories" ToTableName="Territories" Relation="Left Outer Join" FriendlyName="EmployeeTerritories -&gt; Territories" Explanation="" JoinRelationID="31efbac8-60d0-45eb-abd3-9b420a174acb" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="TerritoryID" ToColumnName="TerritoryID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Orders" ToTableName="Order Details" Relation="Inner Join" FriendlyName="Orders - Order Details" Explanation="" JoinRelationID="3641146b-238e-49ee-a395-9ef4b8112ee6" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="OrderID" ToColumnName="OrderID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Orders" ToTableName="Order Details" Relation="Left Outer Join" FriendlyName="Orders -&gt; Order Details" Explanation="" JoinRelationID="7f89bcf4-d0f0-48f2-9a64-fff4f5261f59" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="OrderID" ToColumnName="OrderID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Order Details" ToTableName="Orders" Relation="Inner Join" FriendlyName="Order Details - Orders" Explanation="" JoinRelationID="ce1e14ae-052c-4732-b913-4bcb9e6d4fc7" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="OrderID" ToColumnName="OrderID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Order Details" ToTableName="Orders" Relation="Left Outer Join" FriendlyName="Order Details -&gt; Orders" Explanation="" JoinRelationID="2a3f81bd-3126-4cf8-991a-e89d67e4279a" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="OrderID" ToColumnName="OrderID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="RelationTest" ToTableName="EmployeeRel" Relation="Inner Join" FriendlyName="RelationTest - EmployeeRel" Explanation="" JoinRelationID="82a976ae-4b53-4a86-803e-8f62ec7984a4" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="RelTestID" ToColumnName="SomeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="RelationTest" ToTableName="EmployeeRel" Relation="Left Outer Join" FriendlyName="RelationTest -&gt; EmployeeRel" Explanation="" JoinRelationID="909d985f-94f6-4ec4-a9fd-253a56fc1ff9" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="RelTestID" ToColumnName="SomeID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="EmployeeRel" ToTableName="RelationTest" Relation="Inner Join" FriendlyName="EmployeeRel - RelationTest" Explanation="" JoinRelationID="3154acdc-3522-4bac-abb7-4ace26fc8a46" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="SomeID" ToColumnName="RelTestID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="EmployeeRel" ToTableName="RelationTest" Relation="Left Outer Join" FriendlyName="EmployeeRel -&gt; RelationTest" Explanation="" JoinRelationID="a5dab4c6-7421-41d1-9343-1ce8211eb44f" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="SomeID" ToColumnName="RelTestID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="EmployeeRel" ToTableName="RelationTest" Relation="Inner Join" FriendlyName="EmployeeRel - RelationTest" Explanation="" JoinRelationID="1b97767e-efb5-442c-806d-246fb38018a6" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="FirstName" ToColumnName="FirstName" />
+    <JoinRelationDetails FromColumnName="LastName" ToColumnName="LastName" />
+  </JoinRelation>
+  <JoinRelation FromTableName="EmployeeRel" ToTableName="RelationTest" Relation="Left Outer Join" FriendlyName="EmployeeRel -&gt; RelationTest" Explanation="" JoinRelationID="bfb0c46e-6782-46c0-824b-19d7309e279e" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="FirstName" ToColumnName="FirstName" />
+    <JoinRelationDetails FromColumnName="LastName" ToColumnName="LastName" />
+  </JoinRelation>
+  <JoinRelation FromTableName="RelationTest" ToTableName="EmployeeRel" Relation="Inner Join" FriendlyName="RelationTest - EmployeeRel" Explanation="" JoinRelationID="e3c1f2bf-4156-4397-9e14-d92206bab3c1" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="FirstName" ToColumnName="FirstName" />
+    <JoinRelationDetails FromColumnName="LastName" ToColumnName="LastName" />
+  </JoinRelation>
+  <JoinRelation FromTableName="RelationTest" ToTableName="EmployeeRel" Relation="Left Outer Join" FriendlyName="RelationTest -&gt; EmployeeRel" Explanation="" JoinRelationID="82e6fa8e-dffe-4bf3-8c6f-6300369ed655" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="FirstName" ToColumnName="FirstName" />
+    <JoinRelationDetails FromColumnName="LastName" ToColumnName="LastName" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Categories" ToTableName="Products" Relation="Inner Join" FriendlyName="Categories - Products" Explanation="" JoinRelationID="7ed8f9cb-af1f-4e50-a93b-77c7a576f5ab" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CategoryID" ToColumnName="CategoryID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Categories" ToTableName="Products" Relation="Left Outer Join" FriendlyName="Categories -&gt; Products" Explanation="" JoinRelationID="ba362497-e091-493c-b88a-25bacead5709" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CategoryID" ToColumnName="CategoryID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Products" ToTableName="Categories" Relation="Inner Join" FriendlyName="Products - Categories" Explanation="" JoinRelationID="3511e544-7040-4579-a368-5ecb74f88e5f" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CategoryID" ToColumnName="CategoryID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Products" ToTableName="Categories" Relation="Left Outer Join" FriendlyName="Products -&gt; Categories" Explanation="" JoinRelationID="a0d3c755-712e-408b-b97d-b6c1f1f857c7" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CategoryID" ToColumnName="CategoryID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Customers_old" ToTableName="CustomerCustomerDemo" Relation="Inner Join" FriendlyName="Customers_old - CustomerCustomerDemo" Explanation="" JoinRelationID="63704912-03a3-4732-bdf8-8738c478bd16" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CustomerID" ToColumnName="CustomerID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Customers_old" ToTableName="CustomerCustomerDemo" Relation="Left Outer Join" FriendlyName="Customers_old -&gt; CustomerCustomerDemo" Explanation="" JoinRelationID="e180e456-30bd-402c-a3df-cb8d75eaca82" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CustomerID" ToColumnName="CustomerID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="CustomerCustomerDemo" ToTableName="Customers_old" Relation="Inner Join" FriendlyName="CustomerCustomerDemo - Customers_old" Explanation="" JoinRelationID="76742c18-90d8-49a8-b5f4-5d8fa879e1d4" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CustomerID" ToColumnName="CustomerID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="CustomerCustomerDemo" ToTableName="Customers_old" Relation="Left Outer Join" FriendlyName="CustomerCustomerDemo -&gt; Customers_old" Explanation="" JoinRelationID="d4224370-a0e7-4db9-9baf-d69d01b1bc4a" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CustomerID" ToColumnName="CustomerID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Customers_old" ToTableName="Orders" Relation="Inner Join" FriendlyName="Customers_old - Orders" Explanation="" JoinRelationID="64f1bc6d-4542-4fd4-9cc8-35fa4646acf1" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CustomerID" ToColumnName="CustomerID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Customers_old" ToTableName="Orders" Relation="Left Outer Join" FriendlyName="Customers_old -&gt; Orders" Explanation="" JoinRelationID="00f77f98-b696-422f-be92-2c5fec3500b0" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CustomerID" ToColumnName="CustomerID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Orders" ToTableName="Customers_old" Relation="Inner Join" FriendlyName="Orders - Customers_old" Explanation="" JoinRelationID="6331a879-aae4-45fb-bd8b-16340afc45c4" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CustomerID" ToColumnName="CustomerID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Orders" ToTableName="Customers_old" Relation="Left Outer Join" FriendlyName="Orders -&gt; Customers_old" Explanation="" JoinRelationID="bb7dcd5e-6bec-47e1-8e03-aafee4c19eac" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="CustomerID" ToColumnName="CustomerID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Shippers" ToTableName="Orders" Relation="Inner Join" FriendlyName="Shippers - Orders" Explanation="" JoinRelationID="57b3cf68-a76c-4de9-9a45-47e67fc34cc0" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="ShipperID" ToColumnName="ShipVia" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Shippers" ToTableName="Orders" Relation="Left Outer Join" FriendlyName="Shippers -&gt; Orders" Explanation="" JoinRelationID="bef68ad0-1ad3-42e9-8725-fc032e7b56ff" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="ShipperID" ToColumnName="ShipVia" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Orders" ToTableName="Shippers" Relation="Inner Join" FriendlyName="Orders - Shippers" Explanation="" JoinRelationID="4100da80-481d-4598-966f-995073da9ccc" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="ShipVia" ToColumnName="ShipperID" />
+  </JoinRelation>
+  <JoinRelation FromTableName="Orders" ToTableName="Shippers" Relation="Left Outer Join" FriendlyName="Orders -&gt; Shippers" Explanation="" JoinRelationID="2d9c4653-45db-4177-94c6-175edcc8f103" SecurityRightID="">
+    <JoinRelationDetails FromColumnName="ShipVia" ToColumnName="ShipperID" />
+  </JoinRelation>
+</Metadata>

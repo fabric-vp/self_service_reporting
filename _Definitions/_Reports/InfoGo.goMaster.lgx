@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="InfoGo.goMaster" InfoGoVersion="12.1.142">
+  <IncludeSharedElement DefinitionFile="InfoGo.goShared" SharedElementID="sharedStyles" />
+  <ReportHeader>
+    <Division Class="go-headers" HtmlDiv="True" ID="divAllHeaders">
+      <IncludeSharedElement DefinitionFile="goCustomizations.goWebHeader" SharedElementID="sharedHeader" />
+    </Division>
+  </ReportHeader>
+  <Body>
+    <Rows Width="100" WidthScale="%">
+      <Row>
+        <Column Class="ThemeMasterReportLeftFrame ThemeAlignTop" ID="LeftFrame" ShowModes="None">
+          <IncludeSharedElement DefinitionFile="goCustomizations.goWebSidebar" SharedElementID="sharedSidebar" />
+        </Column>
+        <Column Class="ThemeAlignTop" Width="100" WidthScale="%">
+          <MasterReportContent />
+        </Column>
+      </Row>
+    </Rows>
+  </Body>
+  <ReportFooter>
+    <IncludeSharedElement DefinitionFile="goCustomizations.goWebFooter" SharedElementID="sharedFooter" />
+  </ReportFooter>
+</Report>

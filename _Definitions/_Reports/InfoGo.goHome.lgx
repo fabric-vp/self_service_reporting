@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="InfoGo.goHome" InfoGoVersion="12.1.142">
+  <MasterReport Report="InfoGo.goMaster" />
+  <DefinitionModifierFile DefinitionModifierFile="goCustomizations.dmfHome.xml" ID="CustomDefinitionModifierFile" />
+  <IncludeSharedElement DefinitionFile="InfoGo.goShared" SharedElementID="sharedStyles" />
+  <LocalData ID="localGetBookmarkCnt">
+    <DataLayer DefinitionListFolder="_Reports" ID="rdDataLayer_rdReportCenterID" Type="DefinitionList">
+      <ReportCenterFilter AllowScheduling="True" ID="rdReportCenterFilter" ReportCenterAllowSchedule="True">
+        <Note Note="Get report bookmarks." />
+      </ReportCenterFilter>
+      <CompareFilter CompareType="&lt;&gt;" DataColumn="BookmarkID" DataType="Text" ID="compareIsBookmark" />
+      <AggregateColumn AggregateColumn="BookmarkID" AggregateFunction="Count" ID="cntUserBookmarks">
+        <Note Note="Use the count to show Help when there are no reports." />
+      </AggregateColumn>
+    </DataLayer>
+  </LocalData>
+  <Body Class="go-home">
+    <Division Class="go-headers" HtmlDiv="True" ID="divSubHeader">
+      <Rows ID="GoBoxTitle">
+        <Row>
+          <Column ID="GoBox">
+            <IncludeSharedElement DefinitionFile="InfoGo.goShared" SharedElementID="sharedGoBox" />
+          </Column>
+          <Column ID="GoTitle">
+            <Label Caption="@Constant.goHomeName~" Class="ThemeHeaderLarge go-title" ID="lblTitle" />
+            <Image Caption="InfoGo.iconHelp.png" Class="go-help-icon" Height="24px" ID="InfoGo.iconHelp.png" Tooltip="Show Help" Width="24px">
+              <Action ElementID="divGoIntroContainer" ID="actShowHelp" ShowElementEffect="FadeIn" Type="ShowElement" />
+            </Image>
+            <Division Condition="'@Constants.goSchedulerEnabled~'=='True' || '@Constants.goThemeEditorEnabled~'=='True'" ID="divAdminPopupMenu">
+              <Image Caption="InfoGo.iconAdmin.png" Class="go-help-icon" Height="24px" ID="imgTitleMenu" SecurityRightID="InfoGoScheduleManager,InfoGoThemeManager" Tooltip="Admin Tools" Width="24px">
+                <Action ID="menuAdmin" Type="Popup">
+                  <PopupOption Caption="Schedule Manager" Condition="'@Constants.goSchedulerEnabled~'=='True'" ID="popupScheduleManager" SecurityRightID="InfoGoScheduleManager">
+                    <Action ID="JumpScheduleManager" Type="Report">
+                      <Target Report="InfoGo.goScheduleManager" Type="Report" />
+                    </Action>
+                  </PopupOption>
+                  <PopupOption Caption="Theme Editor" Condition="'@Constants.goThemeEditorEnabled~'=='True'" ID="popupThemeEditor" SecurityRightID="InfoGoThemeManager">
+                    <Action ID="JumpThemeEditor" Type="Report">
+                      <Target Report="InfoGo.goThemeEditor" Type="Report" />
+                    </Action>
+                  </PopupOption>
+                </Action>
+              </Image>
+            </Division>
+          </Column>
+        </Row>
+      </Rows>
+    </Division>
+    <Division Class="ThemeContent ThemeContentCentered" HtmlDiv="True" ID="divGoContainer">
+      <Division Class="go-content" HtmlDiv="True" ID="divMainContent">
+        <Division Class="ThemePanel go-create" HtmlDiv="True" ID="divGoCreateContainer">
+          <Division Class="go-create-list-col" HtmlDiv="True" ID="divGoCreateAnalysis">
+            <Division Class="rdAgUnselectedTab go-create-list-item go-create-analysis" Condition="&quot;@Constant.goAnalysisType~&quot; == &quot;&quot; || &quot;@Constant.goAnalysisType~&quot; == &quot;AnalysisGrid&quot;" HtmlDiv="True" ID="divGoCreateAnalysisLink">
+              <Image Caption="InfoGo.iconAnalysis-48.png" />
+              <LineBreak />
+              <Label Caption="Analyze &amp; Visualize" />
+              <Action ID="actAnalysis" Type="Report">
+                <Target Report="InfoGo.goAnalysisGrid" Type="Report" />
+                <LinkParams goBookmarkCaption="@Constant.goDefaultAnalysisName~" rdAgReset="True" rdBookmarkCollection="@Application.rdBookmarkCollectionDefault~" rdNewBookmark="True" />
+              </Action>
+            </Division>
+            <Division Class="rdAgUnselectedTab go-create-list-item go-create-analysis" Condition="&quot;@Constant.goAnalysisType~&quot; == &quot;Discovery&quot;" HtmlDiv="True" ID="divGoCreateDiscoveryLink">
+              <Image Caption="InfoGo.iconDiscovery-48.png" />
+              <LineBreak />
+              <Label Caption="Analyze &amp; Visualize" />
+              <Action ID="actDiscovery" Type="Report">
+                <Target Report="InfoGo.goDiscovery" Type="Report" />
+                <LinkParams goBookmarkCaption="@Constant.goDefaultAnalysisName~" rdAgReset="True" rdBookmarkCollection="@Application.rdBookmarkCollectionDefault~" rdNewBookmark="True" />
+              </Action>
+            </Division>
+            <Division Class="rdAgUnselectedTab go-create-list-item go-create-analysis" Condition="&quot;@Constant.goAnalysisType~&quot; == &quot;UserSelectable&quot;" HtmlDiv="True" ID="divGoCreateAnalysisOrDiscoveryLink">
+              <Image Caption="InfoGo.iconAnalysis-48.png" />
+              <LineBreak />
+              <Label Caption="Analyze &amp; Visualize" />
+              <Action ElementID="ppGoUserSelectableAnalysis" ID="actShowUserSelectablePopup" Type="ShowElement" />
+            </Division>
+            <Division Class="go-create-help-item go-create-analysis-help" HtmlDiv="True" ID="divGoCreateAnalysisHelp">
+              <Label Caption="Browse data and create &lt;strong&gt;Visuals&lt;/strong&gt; including Charts and Tables..." Class="go-create-help-text" Format="HTML" />
+            </Division>
+          </Division>
+          <Division Class="go-create-list-col" HtmlDiv="True" ID="divGoCreateDashboard">
+            <Division Class="rdAgUnselectedTab go-create-list-item go-create-dashboard" HtmlDiv="True" ID="divGoCreateDashboardLink">
+              <Image Caption="InfoGo.iconDashboard-48.png" ID="InfoGo.iconDashboard-48.png" />
+              <LineBreak />
+              <Label Caption="Design Dashboard" />
+              <Action ID="actDashboard" Type="Report">
+                <Target Report="InfoGo.goDashboard" Type="Report" />
+                <LinkParams goBookmarkCaption="@Constant.goDefaultDashboardName~" rdBookmarkCollection="@Application.rdBookmarkCollectionDefault~" rdNewBookmark="True" />
+              </Action>
+            </Division>
+            <Division Class="go-create-help-item go-create-dashboard-help" HtmlDiv="True" ID="divGoCreateDashboardHelp">
+              <Label Caption="...and see these Visuals come alive in real-time on your &lt;strong&gt;Dashboards&lt;/strong&gt;..." Class="go-create-help-text" Format="HTML" />
+            </Division>
+          </Division>
+          <Division Class="go-create-list-col" HtmlDiv="True" ID="divGoCreateReport">
+            <Division Class="rdAgUnselectedTab go-create-list-item go-create-report" HtmlDiv="True" ID="divGoCreateReportLink">
+              <Image Caption="InfoGo.iconReport-48.png" ID="InfoGo.iconReport-48.png" />
+              <LineBreak />
+              <Label Caption="Design Report" />
+              <Action ID="actReport" Type="Report">
+                <Target Report="InfoGo.goReport" Type="Report" />
+                <LinkParams goBookmarkCaption="@Constant.goDefaultReportName~" rdBookmarkCollection="@Application.rdBookmarkCollectionDefault~" rdNewBookmark="True" rdReportAuthorEdit="True" />
+              </Action>
+            </Division>
+            <Division Class="go-create-help-item go-create-report-help" HtmlDiv="True" ID="divGoCreateReportHelp">
+              <Label Caption="...or prepare them in &lt;strong&gt;Reports&lt;/strong&gt; for scheduling, printing and export." Class="go-create-help-text" Format="HTML" />
+            </Division>
+          </Division>
+        </Division>
+        <Division Class="ThemePanel go-intro" HtmlDiv="True" ID="divGoIntroContainer" ShowModes="None">
+          <Division Class="go-intro-list" HtmlDiv="True" ID="divGoIntro">
+            <Label Caption="&lt;p&gt;Start here.  &lt;strong&gt;Analyze and Visualize&lt;/strong&gt; your data.  Select the data you want. Filter to see just the desired rows.  Group data together and get summary information like totals.  Create charts and gauges, great for visualizing and comparing information.  Save tables, charts and gauges to the Visual Gallery for Dashboards and Reports.&lt;/p&gt;  &lt;p&gt;&lt;strong&gt;Build Dashboards&lt;/strong&gt; to view collections of live Visuals from your Visual Gallery, in groups that make sense to you and communicate effectively to others.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Design Reports&lt;/strong&gt; to place your Visuals, and other content into a customized layout, suitable for browsing, exporting as PDF, and scheduling for email distribution.&lt;/p&gt;&lt;p&gt;Your creations get automatically saved for later.&lt;/p&gt;&lt;p&gt;What will you visualize today?&lt;/p&gt;" Class="go-intro-item" Format="HTML" />
+          </Division>
+        </Division>
+        <Division Class="ThemePanel go-find" Condition="0@Local.cntUserBookmarks~ &gt; 0" HtmlDiv="True" ID="divGoFindContainer">
+          <Division Class="rdAgUnselectedTab go-find-input-container" HtmlDiv="True" ID="divGoFindInputContainer">
+            <InputText Class="go-input go-home-input&quot; placeholder=&quot;Type to search..." DefaultValue="@Request.goFind~" ID="goFind">
+              <EventHandler DhtmlEvent="onkeyup">
+                <Action ElementID="dtList" ID="actFind" Type="RefreshElement" />
+              </EventHandler>
+            </InputText>
+          </Division>
+          <Rows ID="GoListMainContainer" Width="100" WidthScale="%">
+            <Row ID="GoListContainerRow">
+              <Column Class="ThemeAlignTopLeft" ID="BookmarkOrganizerCol" Width="30" WidthScale="%">
+                <BookmarkOrganizer AllowSharing="@Constant.goAllowSharing~" DataTableID="dtList" ID="BookmarkOrganizer">
+                  <IncludeSharedElement DefinitionFile="goCustomizations.goBookmarkSharingUserlist" ID="sharedBookmarkSharingUserlist" SharedElementID="sharedDataLayer" />
+                </BookmarkOrganizer>
+              </Column>
+              <Column Class="ThemeAlignTopLeft" ID="GoFindCol" Width="100" WidthScale="%">
+                <Division Class="go-find-list-container" HtmlDiv="True" ID="divGoFindListContainer">
+                  <DataTable AjaxPaging="True" Class="go-list" ID="dtList" RowClass="go-list-item">
+                    <InteractivePaging CaptionType="Image" HideShowPrevNextCaptions="True" HideWhenOnePage="True" Location="Bottom" PageRowCount="50" ShowPageNumber="Numbered" />
+                    <DataLayer DefinitionListFolder="_Reports" ID="rdDataLayer_rdReportCenterID" Type="DefinitionList">
+                      <ReportCenterFilter AllowScheduling="True" ID="rdReportCenterFilter" ReportCenterAllowSchedule="True" />
+                      <CompareFilter CompareType="&lt;&gt;" DataColumn="BookmarkID" DataType="Text" ID="compareIsBookmark" />
+                      <CompareFilter CompareType="=" CompareValue="@Session.rdSelectedFolderID~" DataColumn="FolderID" ID="compareInFolder" IncludeCondition="&quot;@Request.goFind~&quot;.length = 0 " />
+                      <CompareFilter CaseSensitive="False" CompareType="Contains" CompareValue="@Request.goFind~" DataColumn="Caption" DataType="Text" ID="compareIsFind" IncludeCondition="&quot;@Request.goFind~&quot;.length &gt; 0" />
+                      <SortFilter DataType="Date" SortColumn="SaveTime" SortSequence="Descending" />
+                    </DataLayer>
+                    <DataTableColumn Header=" " ID="colIcon">
+                      <DataColumnSort DataColumn="SaveTime" DataType="Date" />
+                      <Division Class="ThemeNoWrap draghandle" Condition="'@Data.BookmarkUserName~' == '@Function.UserName~'" ID="divIcons">
+                        <Action BookmarkCollection="@Data.BookmarkCollection~" BookmarkDescription="@Data!Js.Caption~" BookmarkID="@Data.BookmarkID~" BookmarkUserName="@Data.BookmarkUserName~" ID="actionDragBookmark" Type="DragBookmark" />
+                        <Image Caption="../rdTemplate/rdBookmarkOrganizer/rdDragHandle.png" Height="24px" ID="imgBookmarkDrag" Width="24px" />
+                        <Image Caption="=IIF(&quot;@Data.rdReport~&quot; = &quot;InfoGo.goAnalysisGrid&quot;,&#xD;&#xA; &quot;_SupportFiles/InfoGo.iconAnalysis-48.png&quot;,&#xD;&#xA;IIF(&quot;@Data.rdReport~&quot; = &quot;InfoGo.goDiscovery&quot;,&#xD;&#xA; &quot;_SupportFiles/InfoGo.iconDiscovery-48.png&quot;,&#xD;&#xA;IIF(&quot;@Data.rdReport~&quot; = &quot;InfoGo.goDashboard&quot;,&#xD;&#xA; &quot;_SupportFiles/InfoGo.iconDashboard-48.png&quot;,&#xD;&#xA;IIF(&quot;@Data.rdReport~&quot; = &quot;InfoGo.goReport&quot;,&#xD;&#xA; &quot;_SupportFiles/InfoGo.iconReport-48.png&quot;,&#xD;&#xA; &quot;_SupportFiles/InfoGo.iconReport-48.png&quot;&#xD;&#xA;))))" Height="24px" ID="InfoGo.iconContent-48.png" Width="24px" />
+                      </Division>
+                      <Division Class="ThemeNoWrap draghandle" Condition="'@Data.BookmarkUserName~' &lt;&gt; '@Function.UserName~'" ID="divIconsShared">
+                        <Action BookmarkCollection="@Data.BookmarkCollection~" BookmarkDescription="@Data!Js.Caption~" BookmarkID="@Data.BookmarkID~" BookmarkUserName="@Data.BookmarkUserName~" ID="actionDragBookmark" Type="DragBookmark" />
+                        <Image Caption="../rdTemplate/rdBookmarkOrganizer/rdDragHandle.png" Height="24px" ID="imgBookmarkDrag" Width="24px" />
+                        <Image Caption="=IIF(&quot;@Data.rdReport~&quot; = &quot;InfoGo.goAnalysisGrid&quot;,&#xD;&#xA; &quot;_SupportFiles/InfoGo.iconAnalysisBookmark-48.png&quot;,&#xD;&#xA;IIF(&quot;@Data.rdReport~&quot; = &quot;InfoGo.goDiscovery&quot;,&#xD;&#xA; &quot;_SupportFiles/InfoGo.iconDiscoveryBookmark-48.png&quot;,&#xD;&#xA;IIF(&quot;@Data.rdReport~&quot; = &quot;InfoGo.goDashboard&quot;,&#xD;&#xA; &quot;_SupportFiles/InfoGo.iconDashboardBookmark-48.png&quot;,&#xD;&#xA;IIF(&quot;@Data.rdReport~&quot; = &quot;InfoGo.goReport&quot;,&#xD;&#xA; &quot;_SupportFiles/InfoGo.iconReportBookmark-48.png&quot;,&#xD;&#xA; &quot;_SupportFiles/InfoGo.iconReportBookmark-48.png&quot;&#xD;&#xA;))))" Height="24px" ID="InfoGo.iconContent-48.png" Width="24px" />
+                      </Division>
+                    </DataTableColumn>
+                    <DataTableColumn Header="Title" ID="colTitle">
+                      <DataColumnSort DataColumn="Caption" />
+                      <Division Class="go-list-item-title" Condition="'@Data.BookmarkUserName~' == '@Function.UserName~'" ID="divGoListItemTitle">
+                        <Label Caption="@Data.Caption~" />
+                        <Action BookmarkCollection="@Data.BookmarkCollection~" BookmarkID="@Data.BookmarkID~" BookmarkUserName="@Data.BookmarkUserName~" SharedBookmarkID="@Data.SharedBookmarkID~" Type="RunBookmark">
+                          <LinkParams goBookmarkCaption="@Data.Caption~" />
+                        </Action>
+                      </Division>
+                      <Division Class="go-list-item-title" Condition="'@Data.BookmarkUserName~' &lt;&gt; '@Function.UserName~'" ID="divGoListItemTitleShared">
+                        <Label Caption="@Data.Caption~" Tooltip="Owned by @Data.BookmarkUserName~" />
+                        <Action BookmarkCollection="@Data.BookmarkCollection~" BookmarkID="@Data.BookmarkID~" BookmarkUserName="@Data.BookmarkUserName~" SharedBookmarkID="@Data.SharedBookmarkID~" Type="RunBookmark">
+                          <LinkParams goBookmarkCaption="@Data.Caption~" />
+                        </Action>
+                      </Division>
+                    </DataTableColumn>
+                    <DataTableColumn Header="Saved" ID="colDate">
+                      <DataColumnSort DataColumn="SaveTime" DataType="Date" />
+                      <Label Caption="@Data.SaveTime~" Format="Short Date" />
+                      <Spaces />
+                      <Label Caption="@Data.SaveTime~" Format="Short Time" />
+                    </DataTableColumn>
+                    <DataTableColumn Condition="@Constant.goSchedulerEnabled~" ID="colSchedule" Width="24" WidthScale="px">
+                      <Division>
+                        <ConditionalClass Class="go-list-item-icon-schedule-on" Condition="Len(&quot;@Data.rdScheduleID~&quot;)&lt;&gt;0" ID="icon-schedule-on" />
+                        <ConditionalClass Class="ThemeHidden" Condition="not @Data.ReportCenterAllowSchedule~ or '@Data.BookmarkUserName~' &lt;&gt; '@Function.UserName~'" ID="icon-schedule-hidden" />
+                        <Image Caption="=IIF(Len(&quot;@Data.rdScheduleID~&quot;)=0,&quot;_SupportFiles/InfoGo.scheduleOff.png&quot;,&quot;_SupportFiles/InfoGo.scheduleActive.png&quot;)" Class="go-list-item-icon go-list-item-icon-schedule" Height="24px" ID="imgSchedule" Tooltip="=iif(&quot;@Data.rdScheduleDescription~&quot;==&quot;&quot;,&quot;Schedule&quot;,&quot;Scheduled @Data.rdScheduleDescription~&quot;)" Width="24px">
+                          <Action ElementID="popupSchedule" ID="showSchedule" Type="ShowElement" />
+                        </Image>
+                        <PopupPanel Caption="Schedule" Draggable="True" ID="popupSchedule" PopupModal="True" PopupPanelLocation="Center" rdNoElementShowHistory="True">
+                          <IncludeFrame FrameBorder="False" ID="frameSchedule" Scrolling="False">
+                            <Target Report="InfoGo.goSchedule" Type="IncludeFrameReport" />
+                            <LinkParams rdAllowedExportFormats="@Data.ReportCenterAllowedExportFormats~" rdBookmarkCollection="@Data.BookmarkCollection~" rdBookmarkID="@Data.BookmarkID~" rdCustomColumn1="@Data.Caption~" rdExportTableID="@Data.ReportCenterExportTableID~" rdPopupID="popupSchedule_Row@Function.RowNumber~" rdRcCommand="Schedule" rdRcReportID="InfoGo.goHome" rdReportCenterID="dtList" rdSchedulerReportID="@Data.rdMenu~" rdSchedulerTaskID="@Data.rdScheduleID~" />
+                          </IncludeFrame>
+                        </PopupPanel>
+                      </Division>
+                    </DataTableColumn>
+                    <DataTableColumn Condition="&quot;@Constant.goAllowSharing~&quot; = &quot;True&quot;" ID="colShare" Width="24" WidthScale="px">
+                      <Division>
+                        <ConditionalClass Class="go-list-item-icon-share-on" Condition="'@Data.IsShared~' == 'true'" ID="icon-share-on" />
+                        <ConditionalClass Class="ThemeHidden" Condition="'@Data.BookmarkUserName~' &lt;&gt; '@Function.UserName~'" ID="icon-share-hidden" />
+                        <Image Caption="=IIF(&quot;@Data.IsShared~&quot;==&quot;True&quot; &amp;&amp; &quot;@Data.BookmarkUserName~&quot;==&quot;@Function.UserName~&quot;,&quot;_SupportFiles/rdBookmarkSharingOn.png&quot;,&quot;_SupportFiles/rdBookmarkSharingTransparent.png&quot;)" Class="go-list-item-icon go-list-item-icon-share" Height="24px" ID="imgBookmarkSharing" Tooltip="=IIF(&quot;@Data.IsShared~&quot;==&quot;True&quot; &amp;&amp; &quot;@Data.BookmarkUserName~&quot;==&quot;@Function.UserName~&quot;,&quot;Edit Sharing&quot;,&quot;Share&quot;)" Width="24px">
+                          <Action BookmarkID="@Data.BookmarkID~" ElementID="popupShareBookmark" ID="showBookmarkSharing" PopupCaption="Share @Data.Caption~" SharingCollectionColumn="UserName" Type="ShowBookmarkSharing">
+                            <IncludeSharedElement DefinitionFile="goCustomizations.goBookmarkSharingUserlist" ID="sharedBookmarkSharingUserlist" SharedElementID="sharedDataLayer" />
+                          </Action>
+                        </Image>
+                      </Division>
+                    </DataTableColumn>
+                    <DataTableColumn Condition="&quot;@Data.BookmarkUserName~&quot; == &quot;@Function.UserName~&quot; || &quot;@Data.IsShortcut~&quot;==&quot;True&quot;" Header=" " ID="colDelete" Width="24" WidthScale="px">
+                      <Division>
+                        <Image Caption="InfoGo.deleteOff.png" Class="go-list-item-icon go-list-item-icon-delete" Height="24px" ID="imgDelete" Tooltip="Delete" Width="24px">
+                          <Action BookmarkID="@Data.BookmarkID~" BookmarkUserName="@Data.BookmarkUserName~" ConfirmMessage="Delete?" ID="deleteBookmark" Type="RemoveBookmark">
+                            <Action ElementID="dtList" ID="refreshTable" Type="RefreshElement">
+                              <LinkParams dtList-PageNr="@Request.dtList-PageNr~" rdNewPageNr="True" />
+                            </Action>
+                          </Action>
+                        </Image>
+                      </Division>
+                    </DataTableColumn>
+                    <DataTableColumn Condition="&quot;@Data.BookmarkUserName~&quot; &lt;&gt; &quot;@Function.UserName~&quot; &amp;&amp; &quot;@Data.IsShortcut~&quot;&lt;&gt;&quot;True&quot;" Header=" " ID="colDelete" Width="24" WidthScale="px">
+                      <Division />
+                    </DataTableColumn>
+                  </DataTable>
+                </Division>
+              </Column>
+            </Row>
+          </Rows>
+        </Division>
+      </Division>
+      <PopupPanel Caption=" " ID="ppGoUserSelectableAnalysis" PopupModal="True">
+        <Rows>
+          <Row>
+            <Column Class="ThemeAlignCenter ThemeLinkButtonSmall" ID="colChooseAnalysis" Width="250" WidthScale="px">
+              <Division ID="divChooseAnalysisDesc">
+                <Label Caption="Analysis Grid" Class="ThemeHeader" ID="lblChooseAnalysisTitle" />
+                <LineBreak LineCount="1" />
+                <Image Caption="InfoGo.Discovery.ChooseAnalysis.png" Class="ThemeContainerBordered" ID="imgChooseAnalysis" Width="180" />
+                <LineBreak LineCount="1" />
+                <Label Caption="Author tables and charts &#xD;&#xA;complete with calculations, &#xD;&#xA;filtering, and grouping." Format="Preserve Line Feeds" ID="lblChooseAnalysisDesc" />
+              </Division>
+              <Action ID="actAnalysis" Type="Report">
+                <Target Report="InfoGo.goAnalysisGrid" Type="Report" />
+                <LinkParams goBookmarkCaption="@Constant.goDefaultAnalysisName~" rdAgReset="True" rdBookmarkCollection="@Application.rdBookmarkCollectionDefault~" rdNewBookmark="True" />
+              </Action>
+            </Column>
+            <Column ID="colChooseSpacer" Width="10" WidthScale="px" />
+            <Column Class="ThemeAlignCenter ThemeLinkButtonSmall" ID="colChooseDiscovery" Width="250" WidthScale="px">
+              <Division ID="divChooseDiscoveryDesc">
+                <Label Caption="Discovery" Class="ThemeHeader" ID="lblChooseDiscoveryTitle" />
+                <LineBreak LineCount="1" />
+                <Image Caption="InfoGo.Discovery.ChooseDiscovery.png" Class="ThemeContainerBordered" ID="imgChooseDiscovery" Width="180" />
+                <LineBreak LineCount="1" />
+                <Label Caption="Discover insights using drag-and-drop&#xD;&#xA;interactions and best-fit&#xD;&#xA;chart recommendations." Format="Preserve Line Feeds" ID="lblChooseDiscoveryDesc" />
+              </Division>
+              <Action ID="actDiscovery" Type="Report">
+                <Target Report="InfoGo.goDiscovery" Type="Report" />
+                <LinkParams goBookmarkCaption="@Constant.goDefaultAnalysisName~" rdAgReset="True" rdBookmarkCollection="@Application.rdBookmarkCollectionDefault~" rdNewBookmark="True" />
+              </Action>
+            </Column>
+          </Row>
+        </Rows>
+      </PopupPanel>
+    </Division>
+    <IncludeScript ID="scriptShowIntro" IncludedScript="if (0@Local.cntUserBookmarks~ == 0) {                document.getElementById('divGoIntroContainer').style.display = ''}" />
+    <IncludeScript ID="scriptGoBoxHome" IncludedScript="document.getElementById(&quot;divGoBoxGO&quot;).className += &quot; go-box-home&quot;;/* document.getElementById(&quot;actGoBox&quot;).onclick = function() { return false; }; /* disable GO Box link on Home */" />
+  </Body>
+  <IncludeSharedElement DefinitionFile="InfoGo.goShared" SharedElementID="sharedScripts" />
+  <ideTestParams dtList-PageNr="" goFind="" />
+</Report>

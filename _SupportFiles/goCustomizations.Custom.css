@@ -1,0 +1,43 @@
+/*  Header
+	Change anything to fit your needs  */
+#LeftFrame {
+	min-width: 200px;
+	width: 200px;
+	vertical-align: top;
+}
+
+.go-header-spacer {
+	padding-top: 1em;
+}
+
+/*  Body
+	Adjust this to fit a different-sized footer  */
+#divGoContainer {
+	padding-bottom: 3em;
+}
+
+/*  Footer
+	Change the fixed height of the sticky footer to fit more, or tweak other details  */
+.goFooter {
+	height: 3.5em; /* Set fixed height here */
+	margin-top: -3.5em; /* Set negative of fixed height here */
+	padding: 1em;
+}
+
+/*	There's a spacer element if you'd like to use it
+.go-footer-spacer {} */
+
+/*  Use any responsive CSS fixes as necessary  */
+/*@media (max-width: 767px) {
+	.go-footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}*/
+
+/* 	Apply this class to .go-header and .go-box container to let headers scroll away  */
+.go-absolute {
+	position: absolute;
+}

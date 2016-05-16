@@ -1,0 +1,367 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body, body>form {
+	height: 100%;
+	-ms-overflow-style: scrollbar;
+}
+
+strong, b {
+font-weight: bold;
+}
+
+body,
+.go-page {
+	font-size: 12px;
+	text-rendering: optimizeLegibility;
+}
+
+#divGoHeader{
+  height: 100%;
+}
+
+#divGoContainer {
+	padding-bottom: 3em;
+}
+
+#rdMainBody .ThemeContent {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+.ThemeContent,
+.ThemeContentCentered,
+.go-analysis .rdAgWrapper > tbody > tr > td {
+	padding: 0 1.2em;
+}
+
+.go-analysis .ThemeContent,
+.go-analysis .ThemeContentCentered {
+	padding: 0;
+}
+
+.ThemeContentCentered {
+	max-width: 100%;
+    width: 81em;
+}
+
+/* To center content:
+.go-analysis .rdAgWrapper,*/
+.go-dashboard .go-content,
+.go-report .go-content {
+	margin: 2em auto 0;
+}
+.go-dashboard .ThemeContent,
+.go-report .ThemeContent {
+	min-width: 100%;
+}
+
+.go-title { /* custom title */
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.go-title-text {
+	display: inline-block;
+}
+
+.go-title-menu-icon {
+	vertical-align: top;
+	margin-left: 0.25em;
+}
+
+.go-help-icon {
+	vertical-align: middle;
+	margin-left: 20px;
+}
+
+.go-box-container {
+	height: 6em;
+	width: 6em;
+	padding: 1em;
+	border-radius: 0 0 4px 0;
+}
+
+.go-box {
+	position: absolute;
+	width: 48px;  /* 2em if text "GO" */
+	height: 48px; /* 2em if text "GO" */
+	font-size: 2em;
+	line-height: 2;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2px;
+	background-color:#363b42;
+}
+
+.go-box:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #454d59), color-stop(1, #363b42) );
+	background:-moz-linear-gradient( center top, #454d59 5%, #363b42 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#454d59', endColorstr='#363b42');
+	background-color:#454d59;
+}
+
+.go-box:active {
+	position: relative;
+	top: 1px;
+}
+
+.go-box a {
+	text-shadow: 0 -1px #aaa;
+	text-decoration: none;
+}
+
+.go-box a:hover {
+	text-decoration: none;
+}
+
+.go-box-home {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+	filter: alpha(opacity=15);
+	opacity: 0.15;
+
+}
+
+.go-box-home:hover {
+	background: #363b42;
+}
+
+table #dtList, table #dtUserList, table #dtBookmarkSharedWith {
+    border-spacing: 0px;
+}
+
+.go-list-item .rdThemeDataTableCell, #dtUserList .rdThemeDataTableCell, #dtBookmarkSharedWith .rdThemeDataTableCell {
+    border-bottom: 1px solid #DCDCDC;
+}
+
+
+.go-find-input-container .go-icon {
+	float: right;
+	margin: 0;
+	margin-top: -0.2em;
+	font-size: 2em;
+	line-height: 2;
+	width: 1.5em;
+	position: relative;
+	pointer: normal;
+}
+
+.go-find-input-container {
+	width: 100%;
+	position: relative;
+	overflow: visible;
+	margin-bottom: 0.25em;
+    padding: 5px;
+}
+
+.go-find-input-container:hover {
+    background-color: #2C323C !important;
+}
+	
+input.go-input {
+	margin-top: 0.35em;
+    padding-left: 40px;
+}
+
+.go-home .go-content ul,
+.go-home .go-content li {
+	list-style: none;
+}
+
+.ThemePanel {
+	display: block;
+	padding: 1em;
+}
+
+.go-create-list-col {
+	width: 33%;
+	min-width: 7.2em;
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	margin-left: 1px;
+	vertical-align: top;
+}
+
+.go-create-list-item,
+.go-intro-item {
+	width: 100%;
+	vertical-align: middle;
+	padding: 0.5em 0;
+	margin: 0;
+	font-size: 1.2em;
+	position: relative;
+	display: inline-block;
+	z-index: 2;
+	background-size: auto 100px;
+}
+
+.go-create-list-item {
+	height: 6em;
+}
+
+.go-create-help-item {
+	height: 6em;
+	font-size: 1em;
+	padding: 1em;
+}
+
+.go-intro {
+	width: 100%
+}
+
+.go-intro-list {
+	padding: 0 1em;
+	font-size: 1em;
+}
+
+.go-intro-item li {
+	margin: 0.5em;
+}
+
+.go-intro-item p {
+	margin: 1.5em 0.5em;
+}
+
+.go-create-list-item:active {
+	position: relative;
+	top: 1px;
+}
+
+.go-create-analysis {
+	border-bottom: 5px solid #85b74d;
+}
+
+.go-create-dashboard {
+	border-bottom: 5px solid #b84026;
+}
+
+.go-create-report {
+	border-bottom: 5px solid #45819d;
+}
+
+input.go-input {
+	background: transparent;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+    color:#fff;
+}
+
+.go-home input.go-input {
+	width: 100%;
+	margin: 0;
+	padding: 0 5px 0 40px;
+	font-size: 1.5em;
+	background-color: transparent;
+    background-position: 1em 50%;
+}
+
+.go-find-input-container {
+	background-image: url('../_SupportFiles/InfoGo.iconFind.png');
+    background-color: #454d59;
+	background-repeat: no-repeat;
+	background-position: 1em 50%;
+	background-size: 24px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../_SupportFiles/InfoGo.iconFind.png',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../_SupportFiles/InfoGo.iconFind.png',sizingMethod='scale')";
+    text-align: left;
+}
+
+.go-list {
+	width: 100%;
+}
+
+.go-list-item-icon-schedule,
+.go-list-item-icon-delete,
+.go-list-item-icon-share {
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+.go-list-item-title {
+	padding: 0.25em 0;
+}
+
+.go-home{
+	align: center;
+}
+
+/* Adjustments for small devices*/
+
+@media (max-width: 30em) {  /* small mobile */
+	.go-list,
+	.go-intro-list {
+		font-size: 0.75em;
+	}
+}
+
+@media (max-width: 40em) {  /* mobile */
+
+	.go-create-list-col {
+		display: block;
+		width: 100%;
+	}
+	.go-create-list-item {
+		display: inline-block;
+		width: 66.66666%;
+		height: 100%;
+		border-right: 1px solid #555;
+	}
+	.go-create-help-item {
+		display: inline-block;
+		width: 33.33333%;
+		height: 100%;
+		vertical-align: bottom;
+	}
+	.go-create-analysis {
+		border-bottom: 8px solid #85b74d;
+		border-radius: 2px 0 0 0;
+	}
+	.go-create-dashboard {
+		border-bottom: 8px solid #b84026;
+	}
+	.go-create-report {
+		border-bottom: 8px solid #2e5b74;
+		border-radius: 0 0 0 2px;
+	}
+	.go-create-analysis-help {
+		border-bottom: 8px solid #85b74d;
+		border-radius: 0 2px 0 0;
+	}
+	.go-create-dashboard-help {
+		border-bottom: 8px solid #b84026;
+	}
+	.go-create-report-help {
+		border-bottom: 8px solid #2e5b74;
+		border-radius: 0 0 2px 0;
+	}
+}
+
+@media (min-width: 40em) {  /* desktop */
+	.go-create-list {
+		min-width: 38em;
+	}
+}
+
+.draghandle {
+	cursor: move;
+}
+
+#divHeaderContent {
+vertical-align: middle;
+}
+
+#UserLogout {
+    position: absolute;
+    top: .0em;
+    right: 2em;
+}

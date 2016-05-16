@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="InfoGo.goShared" InfoGoVersion="12.1.142">
+  <SharedElement ID="sharedStyles">
+    <IncludeHtmlFile IncludedHtmlFile="goCustomizations.Custom.html">
+      <Note Note="Add any custom HTML" />
+    </IncludeHtmlFile>
+    <IncludeHtmlFile IncludedHtmlFile="InfoGo.Mobile.html">
+      <Note Note="Meta tags for mobile" />
+    </IncludeHtmlFile>
+    <StyleSheet ShowModes="rdBrowser" StyleSheet="InfoGo.GO.css">
+      <Note Note="Styles applying to InfoGo app" />
+    </StyleSheet>
+    <IncludeHtml Html="&lt;link rel=&quot;stylesheet&quot; href=&quot;_SupportFiles/InfoGo.Print.css&quot; type=&quot;text/css&quot; media=&quot;print&quot; /&gt;" ID="InfoGo.Print.css">
+      <Note Note="Styles applying to just printed versions" />
+    </IncludeHtml>
+    <StyleSheet StyleSheet="goCustomizations.Custom.css">
+      <Note Note="Add any custom CSS" />
+    </StyleSheet>
+  </SharedElement>
+  <SharedElement ID="sharedGoBox">
+    <Division Class="go-box-container" HtmlDiv="True" ID="divGoBoxContainer" ShowModes="rdBrowser">
+      <Division Class="go-box go-box-go" HtmlDiv="True" ID="divGoBoxGO">
+        <Image AltText="@Constant.goHomeName~" Caption="InfoGo.iconHome.png" Class="go-box-title" Height="48px" ID="InfoGo.iconHome.png" Tooltip="@Constant.goHomeName~" Width="48px">
+          <Action ID="actGoBox" Type="Link">
+            <Target ID="tgtGoBox" Link="rdPage.aspx?rdReport=InfoGo.goHome&amp;goFind=" Type="Link" />
+          </Action>
+        </Image>
+      </Division>
+    </Division>
+  </SharedElement>
+  <SharedElement ID="sharedTitleWithRename">
+    <Division Class="go-title" HtmlDiv="True" ID="divGoTitle">
+      <Division Class="go-title-text" HtmlDiv="True" ID="divGoTitleText">
+        <Label Caption="@Session.goBookmarkCaption~" Class="ThemeHeaderLarge" ID="lblBookmarkCaption" />
+        <Image Caption="InfoGo.iconCog.png" Class="go-title-menu-icon" Height="24px" ID="imgTitleMenu" Width="24px">
+          <Action ID="menuTitle" Type="Popup">
+            <PopupOption Caption="=IIF(&quot;@Session.goBookmarkCollection~&quot;==&quot;&quot; || &quot;@Session.goBookmarkCollection~&quot;==&quot;@Application.rdBookmarkCollectionDefault~&quot;, &quot;Rename&quot;,&quot;&quot;)" ID="popupRename">
+              <Action BookmarkDescription="@Session.goBookmarkCaption~" BookmarkDescriptionMessage="Name: " BookmarkID="@Session.goBookmarkID~" BookmarkSaveCaption="Save" ID="actionEditBookmark" Type="EditBookmark">
+                <Action ID="scriptUpdateCaption" Javascript="document.getElementById(&quot;lblBookmarkCaption&quot;).childNodes[0].nodeValue = document.getElementById(&quot;txtEditBookmarkDescription&quot;).value" Type="Javascript" />
+              </Action>
+              <Note Note="Only displayed when the user owns the current bookmark." />
+            </PopupOption>
+            <PopupOption Caption="Duplicate" ID="popupCopy">
+              <Action AcknowledgeMessage="Done" BookmarkCollection="" BookmarkDescription="Copy of *" BookmarkID="@Session.goBookmarkID~" BookmarkUserName="@Session.goBookmarkUserName~" ConfirmMessage="Duplicate &quot;@Session.goBookmarkCaption~&quot;?" DestinationBookmarkCollection="@Function.UserName~goCollection" ID="actionCopyBookmark" SharedBookmarkID="@Session.goSharedBookmarkID~" Type="CopyBookmark" />
+            </PopupOption>
+          </Action>
+        </Image>
+      </Division>
+    </Division>
+  </SharedElement>
+  <SharedElement ID="sharedMenu">
+    <Division ID="divSidebar">
+      <MenuTree Class="ThemeMenuItemLink" HorizontalMenuSpacing="5" ID="menuTreeSide" Width="200" WidthScale="px">
+        <MenuBranch Caption="Jump to:" Class="ThemeHeader" Expanded="True" ID="branchReports" LevelIndent="4">
+          <MenuLeaf Caption="Home" ID="leafHome">
+            <Action ID="actGoBox" Type="Link">
+              <Target ID="tgtGoBox" Link="rdPage.aspx?rdReport=InfoGo.goHome&amp;goFind=" Type="Link" />
+            </Action>
+          </MenuLeaf>
+          <MenuBranch Caption="Analyze and Visualize" Condition="&quot;@Constant.goAnalysisType~&quot; == &quot;UserSelectable&quot;" ID="BranchAnalysis">
+            <MenuLeaf Caption="Analysis Grid" ID="leafAnalysisGrid">
+              <Action ID="actAnalysisGrid" Type="Report">
+                <Target Report="InfoGo.goAnalysisGrid" Type="Report" />
+                <LinkParams goBookmarkCaption="@Constant.goDefaultAnalysisName~" rdAgReset="True" rdBookmarkCollection="@Application.rdBookmarkCollectionDefault~" rdNewBookmark="True" />
+              </Action>
+            </MenuLeaf>
+            <MenuLeaf Caption="Discovery" ID="leafDiscover">
+              <Action ID="actDiscovery" Type="Report">
+                <Target Report="InfoGo.goDiscovery" Type="Report" />
+                <LinkParams goBookmarkCaption="@Constant.goDefaultAnalysisName~" rdAgReset="True" rdBookmarkCollection="@Application.rdBookmarkCollectionDefault~" rdNewBookmark="True" />
+              </Action>
+            </MenuLeaf>
+          </MenuBranch>
+          <MenuLeaf Caption="Analyze and Visualize" Condition="&quot;@Constant.goAnalysisType~&quot; == &quot;&quot; || &quot;@Constant.goAnalysisType~&quot; == &quot;AnalysisGrid&quot;" ID="leafAnalysisGrid">
+            <Action ID="actAnalysisGrid" Type="Report">
+              <Target Report="InfoGo.goAnalysisGrid" Type="Report" />
+              <LinkParams goBookmarkCaption="@Constant.goDefaultAnalysisName~" rdAgReset="True" rdBookmarkCollection="@Application.rdBookmarkCollectionDefault~" rdNewBookmark="True" />
+            </Action>
+          </MenuLeaf>
+          <MenuLeaf Caption="Analyze and Visualize" Condition="&quot;@Constant.goAnalysisType~&quot; == &quot;Discovery&quot;" ID="leafDiscover">
+            <Action ID="actDiscovery" Type="Report">
+              <Target Report="InfoGo.goDiscovery" Type="Report" />
+              <LinkParams goBookmarkCaption="@Constant.goDefaultAnalysisName~" rdAgReset="True" rdBookmarkCollection="@Application.rdBookmarkCollectionDefault~" rdNewBookmark="True" />
+            </Action>
+          </MenuLeaf>
+          <MenuLeaf Caption="Design Dashboard" ID="leafDashboard">
+            <Action ID="actDashboard" Type="Report">
+              <Target Report="InfoGo.goDashboard" Type="Report" />
+              <LinkParams goBookmarkCaption="@Constant.goDefaultDashboardName~" rdNewBookmark="True" />
+            </Action>
+          </MenuLeaf>
+          <MenuLeaf Caption="Design Report" ID="leafReport">
+            <Action ID="actReport" Type="Report">
+              <Target Report="InfoGo.goReport" Type="Report" />
+              <LinkParams goBookmarkCaption="@Constant.goDefaultReportName~" rdNewBookmark="True" rdReportAuthorEdit="True" />
+            </Action>
+          </MenuLeaf>
+        </MenuBranch>
+        <MenuBranch Caption="Admin Tools" Class="ThemeHeader" Expanded="True" ID="branchAdmin" LevelIndent="4">
+          <MenuLeaf Caption="Schedule Manager" Condition="'@Constants.goSchedulerEnabled~'=='True'" ID="leafAdmin1" SecurityRightID="InfoGoScheduleManager">
+            <Action ID="actReport" Type="Report">
+              <Target Report="InfoGo.goScheduleManager" Type="Report" />
+              <LinkParams goBookmarkCaption="@Constant.goSchedulePageName~" rdNewBookmark="True" rdReportAuthorEdit="True" />
+            </Action>
+          </MenuLeaf>
+          <MenuLeaf Caption="Theme Editor" Condition="'@Constants.goThemeEditorEnabled~'=='True'" ID="leafAdmin2" SecurityRightID="InfoGoThemeManager">
+            <Action ID="actAnalysis" Type="Report">
+              <Target Report="InfoGo.goThemeEditor" Type="Report" />
+              <LinkParams goBookmarkCaption="@Constant.goThemeEditorName~" rdAgReset="True" rdNewBookmark="True" />
+            </Action>
+          </MenuLeaf>
+        </MenuBranch>
+      </MenuTree>
+      <LineBreak LineCount="4" />
+    </Division>
+  </SharedElement>
+  <SharedElement ID="sharedScripts">
+    <ReportFooter ID="scripts">
+      <IncludeScriptFile IncludedScriptFile="goCustomizations.Custom.js">
+        <Note Note="Add any custom JavaScript into file goCustomizations.Custom.js" />
+      </IncludeScriptFile>
+    </ReportFooter>
+  </SharedElement>
+  <ideTestParams />
+</Report>

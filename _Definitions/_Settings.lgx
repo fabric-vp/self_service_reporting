@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Setting ID="_settings" InfoGoVersion="12.1.142">
+  <Constants goAllowSharing="False" goAnalysisType="AnalysisGrid" goBatchSelection="False" goCustomTableSessionVars="" goDefaultAnalysisName="Untitled Analysis" goDefaultDashboardName="Untitled Dashboard" goDefaultReportName="Untitled Report" goHideColumnSelection="False" goHomeName="Menu" goMetadataIDsAnalysisGrid="" goMetadataIDsDiscovery="" goReportStarterFile="" goSchedulerEnabled="False" goThemeEditorEnabled="False" SchedulerApplicationID="InfoGO" />
+  <Application Caption="Info GO" DefaultReport="InfoGo.goHome" />
+  <Path AppPath="http://localhost/InfoGo" />
+  <General BookmarkCollectionDefault="@Function.UserName~goCollection" BookmarkLocation="@Function.AppPhysicalPath~\goBookmarks\UserName@Function.UserName~" DoctypeDeclaration="Html5" rdDebuggerStyle="ErrorDetail" />
+  <SessionTimeout SessionAutoKeepAlive="True" />
+  <GlobalCSS Theme="Signal" />
+  <Connections>
+    <Note Note="Add and configure a supported database Connection element here," />
+    <Note Note="then select it and run its Metadata Builder wizard." />
+    <Remark>
+      <Connection ID="goScheduler" PassKey="myKey" ServerName="localhost" Type="Scheduler" />
+    </Remark>
+    <Remark>
+      <Connection ID="goMail" Type="Smtp" />
+    </Remark>
+  </Connections>
+  <Remark>
+    <Security>
+      <Note Note="Add a Security element to configure InfoGO to work with different users." />
+    </Security>
+  </Remark>
+  <ideTestParams />
+</Setting>
