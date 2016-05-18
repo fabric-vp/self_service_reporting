@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Setting ID="_settings" InfoGoVersion="12.1.142" SavedBy="FABRIC-PC-VINNY\Vinesh" SavedAt="18/05/2016 08:14:51" EngineVersion="12.1.188-SP1">
+<Setting ID="_settings" InfoGoVersion="12.1.142" SavedBy="FABRIC-PC-VINNY\Vinesh" SavedAt="18/05/2016 08:58:55" EngineVersion="12.1.188-SP1">
   <Constants goAllowSharing="False" goAnalysisType="AnalysisGrid" goBatchSelection="False" goCustomTableSessionVars="" goDefaultAnalysisName="Untitled Analysis" goDefaultDashboardName="Untitled Dashboard" goDefaultReportName="Untitled Report" goHideColumnSelection="False" goHomeName="Menu" goMetadataIDsAnalysisGrid="" goMetadataIDsDiscovery="" goReportStarterFile="" goSchedulerEnabled="False" goThemeEditorEnabled="False" SchedulerApplicationID="InfoGO" />
   <Application Caption="Info GO" DefaultReport="InfoGo.goHome" />
   <Path AppPath="http://localhost:8080/self_service_reporting" />
