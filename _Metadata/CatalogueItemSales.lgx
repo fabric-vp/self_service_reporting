@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Metadata MetadataBuilder="Logi Metadata Builder" BuilderVersion="12.1.188.674">
+  <Table TableName="catalogues" Schema="" FriendlyName="Catalogues" TableType="U" HideTable="False" SecurityRightID="">
+    <Column ColumnName="id" FriendlyName="Catalogue Id" DataType="Number" Format="General Number" Alignment="" NoSorting="False" NoGrouping="True" NoAggregation="False" ValuesForFilter="" LinkURL="" FrameID="" SecurityRightID="" InitiallyVisible="True" HideColumn="False" />
+    <Column ColumnName="organisation_id" FriendlyName="Organisation Id" DataType="Number" Format="General Number" Alignment="" NoSorting="False" NoGrouping="True" NoAggregation="False" ValuesForFilter="" LinkURL="" FrameID="" SecurityRightID="" InitiallyVisible="True" HideColumn="False" />
+    <Column ColumnName="associated_organisation_id" FriendlyName="Associated Organisation Id" DataType="Number" Format="General Number" Alignment="" NoSorting="False" NoGrouping="True" NoAggregation="False" ValuesForFilter="" LinkURL="" FrameID="" SecurityRightID="" InitiallyVisible="True" HideColumn="True" />
+    <Column ColumnName="type" FriendlyName="Type" DataType="Text" Format="" Alignment="" NoSorting="False" NoGrouping="False" NoAggregation="False" ValuesForFilter="" LinkURL="" FrameID="" SecurityRightID="" InitiallyVisible="True" HideColumn="False" />
+    <Column ColumnName="name" FriendlyName="Name" DataType="Text" Format="" Alignment="" NoSorting="False" NoGrouping="False" NoAggregation="False" ValuesForFilter="" LinkURL="" FrameID="" SecurityRightID="" InitiallyVisible="True" HideColumn="False" />
+    <Column ColumnName="description" FriendlyName="Description" DataType="Text" Format="" Alignment="" NoSorting="False" NoGrouping="False" NoAggregation="False" ValuesForFilter="" LinkURL="" FrameID="" SecurityRightID="" InitiallyVisible="True" HideColumn="False" />
+    <Column ColumnName="next_review_date" FriendlyName="Next Review Date" DataType="Text" Format="" Alignment="" NoSorting="False" NoGrouping="False" NoAggregation="False" ValuesForFilter="" LinkURL="" FrameID="" SecurityRightID="" InitiallyVisible="False" HideColumn="True" />
+    <Column ColumnName="default" FriendlyName="Default" DataType="Number" Format="General Number" Alignment="" NoSorting="False" NoGrouping="True" NoAggregation="False" ValuesForFilter="" LinkURL="" FrameID="" SecurityRightID="" InitiallyVisible="True" HideColumn="False" />
+    <Column ColumnName="created" FriendlyName="Created" DataType="DateTime" Format="General Date" Alignment="" NoSorting="False" NoGrouping="False" NoAggregation="False" ValuesForFilter="" LinkURL="" FrameID="" SecurityRightID="" InitiallyVisible="True" HideColumn="False" />
+    <Column ColumnName="modified" FriendlyName="Modified" DataType="DateTime" Format="General Date" Alignment="" NoSorting="False" NoGrouping="False" NoAggregation="False" ValuesForFilter="" LinkURL="" FrameID="" SecurityRightID="" InitiallyVisible="True" HideColumn="True" />
+    <Column ColumnName="status" FriendlyName="Status" DataType="Number" Format="General Number" Alignment="" NoSorting="False" NoGrouping="True" NoAggregation="False" ValuesForFilter="" LinkURL="" FrameID="" SecurityRightID="" InitiallyVisible="True" HideColumn="True" />
+  </Table>
+</Metadata>
