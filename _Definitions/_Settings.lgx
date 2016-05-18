@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Setting ID="_settings" InfoGoVersion="12.1.142">
+<Setting ID="_settings" InfoGoVersion="12.1.142" SavedBy="FABRIC-PC-VINNY\Vinesh" SavedAt="18/05/2016 08:14:51" EngineVersion="12.1.188-SP1">
   <Constants goAllowSharing="False" goAnalysisType="AnalysisGrid" goBatchSelection="False" goCustomTableSessionVars="" goDefaultAnalysisName="Untitled Analysis" goDefaultDashboardName="Untitled Dashboard" goDefaultReportName="Untitled Report" goHideColumnSelection="False" goHomeName="Menu" goMetadataIDsAnalysisGrid="" goMetadataIDsDiscovery="" goReportStarterFile="" goSchedulerEnabled="False" goThemeEditorEnabled="False" SchedulerApplicationID="InfoGO" />
   <Application Caption="Info GO" DefaultReport="InfoGo.goHome" />
-  <Path AppPath="http://localhost/InfoGo" />
-  <General BookmarkCollectionDefault="@Function.UserName~goCollection" BookmarkLocation="@Function.AppPhysicalPath~\goBookmarks\UserName@Function.UserName~" DoctypeDeclaration="Html5" rdDebuggerStyle="ErrorDetail" />
+  <Path AppPath="http://localhost:8080/self_service_reporting" />
+  <General BookmarkCollectionDefault="@Function.UserName~goCollection" BookmarkLocation="@Function.AppPhysicalPath~\goBookmarks\UserName@Function.UserName~" DoctypeDeclaration="Html5" rdDebuggerStyle="DebuggerLinks" />
   <SessionTimeout SessionAutoKeepAlive="True" />
   <GlobalCSS Theme="Signal" />
   <Connections>
@@ -15,6 +15,9 @@
     <Remark>
       <Connection ID="goMail" Type="Smtp" />
     </Remark>
+    <Connection ID="SP" Type="MySql" MySqlServer="192.168.1.15" MySqlPort="3306" MySqlDatabase="ProcurePlusSchemesPlus" MySqlUser="logi_self_serv" MySqlPassword="logi_self_serv">
+      <Metadata ID="Projects" MetadataName="metaProjects" />
+    </Connection>
   </Connections>
   <Remark>
     <Security>

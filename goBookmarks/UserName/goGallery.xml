@@ -1,2 +1,57 @@
 <rdSavedDashboard>
+  <ExtraPanelDefinition>
+    <Panel Caption="Projects Table" PanelDescription="List of all projects" SaveTime="2016-05-17T11:41:26+01:00" ID="rdCustomDashboardPanel_009a2ddc07c14f1291d899017dad7a7b" rdUniqueIdentifier="009a2ddc07c14f1291d899017dad7a7b" rdCustomDashboardPanel="True" MultipleInstances="False" Image="../rdTemplate/rdAnalysisGrid/rdAgDataTable.png" rdMakeIdsUnique="True">
+      <PanelContent Height="">
+        <DataTable CellSpacing="1" Class="rdAgDataTable" TableBorder="0" DraggableColumns="True" ResizableColumns="True" RememberSort="True" AccessibleHeaders="True" AccessibleSummary="AnalysisGrid DataTable" AjaxPaging="True" ID="dtAnalysisGrid_635990820863150000">
+          <InteractivePaging ShowPageNumber="True" IDnotSupportedHere="pagingTable" Location="Top" CaptionType="Image" PageRowCount="20" NumberedPageCount="" HideWhenOnePage="True" Class="rdThemePaging rdThemePaging rdThemePaging rdThemePaging rdAgPaging" CurrentPageClass="rdThemePagingCurrent rdThemePagingCurrent rdThemePagingCurrent rdThemePagingCurrent" FirstPageCaption="rdTemplate/rdTheme/Signal/images/rdPageFirstDark.png" PreviousPageCaption="rdTemplate/rdTheme/Signal/images/rdPagePreviousDark.png" NextPageCaption="rdTemplate/rdTheme/Signal/images/rdPageNextDark.png" LastPageCaption="rdTemplate/rdTheme/Signal/images/rdPageLastDark.png" />
+          <DataTableColumn rdAgGeneratedColumn="True" ID="agCol_projects_id" DataColumn="projects_id" ColumnHeaderClass="rdAgQbColor1" Class="rdThemeDataTableCell rdThemeDataTableCell  rdAgAlignRight" Header="Project Id">
+            <Label ID="agCol_projects_id" Caption="@Data.projects_id~" Format="General Number" />
+            <SpaceForBorders DataColumn="projects_id" />
+            <ExcelColumnFormat DataType="Number" />
+            <DataColumnSort OriginalDataColumn="projects_id" OriginalDataType="Number" DataColumn="projects_id" DataType="Number" />
+          </DataTableColumn>
+          <DataTableColumn rdAgGeneratedColumn="True" ID="agCol_projects_name" DataColumn="projects_name" ColumnHeaderClass="rdAgQbColor1" Class="rdThemeDataTableCell rdThemeDataTableCell" Header="Project Name">
+            <Label ID="agCol_projects_name" Caption="@Data.projects_name~" Format="">
+              <Action Type="Link">
+                <Target Type="Link" Link="http://schemesplus.launchcontrol-systems.com/projects/edit/@Data.projects_id~" FrameID="NewWindow" />
+              </Action>
+            </Label>
+            <SpaceForBorders DataColumn="projects_name" />
+            <DataColumnSort OriginalDataColumn="projects_name" OriginalDataType="Text" DataColumn="projects_name" DataType="Text" />
+          </DataTableColumn>
+          <DataTableColumn rdAgGeneratedColumn="True" ID="agCol_projects_fee_percentage" DataColumn="projects_fee_percentage" ColumnHeaderClass="rdAgQbColor1" Class="rdThemeDataTableCell rdThemeDataTableCell  rdAgAlignRight" Header="Fee Percentage">
+            <Label ID="agCol_projects_fee_percentage" Caption="@Data.projects_fee_percentage~" Format="General Number" />
+            <SpaceForBorders DataColumn="projects_fee_percentage" />
+            <ExcelColumnFormat DataType="Number" />
+            <DataColumnSort OriginalDataColumn="projects_fee_percentage" OriginalDataType="Number" DataColumn="projects_fee_percentage" DataType="Number" />
+          </DataTableColumn>
+          <DataTableColumn rdAgGeneratedColumn="True" ID="agCol_projects_created" DataColumn="projects_created" ColumnHeaderClass="rdAgQbColor1" Class="rdThemeDataTableCell rdThemeDataTableCell" Header="Created">
+            <Label ID="agCol_projects_created" Caption="@Data.projects_created~" Format="General Date" />
+            <SpaceForBorders DataColumn="projects_created" />
+            <DataColumnSort OriginalDataColumn="projects_created" OriginalDataType="DateTime" DataColumn="projects_created" DataType="DateTime" />
+          </DataTableColumn>
+          <DataTableColumn rdAgGeneratedColumn="True" ID="agCol_projects_archived" DataColumn="projects_archived" ColumnHeaderClass="rdAgQbColor1" Class="rdThemeDataTableCell rdThemeDataTableCell  rdAgAlignRight" Header="Is Archived">
+            <Label ID="agCol_projects_archived" Caption="@Data.projects_archived~" Format="General Number" />
+            <SpaceForBorders DataColumn="projects_archived" />
+            <ExcelColumnFormat DataType="Number" />
+            <DataColumnSort OriginalDataColumn="projects_archived" OriginalDataType="Number" DataColumn="projects_archived" DataType="Number" />
+          </DataTableColumn>
+          <DataTableColumn rdAgGeneratedColumn="True" ID="agCol_projects_status" DataColumn="projects_status" ColumnHeaderClass="rdAgQbColor1" Class="rdThemeDataTableCell rdThemeDataTableCell  rdAgAlignRight" Header="Status">
+            <Label ID="agCol_projects_status" Caption="@Data.projects_status~" Format="General Number" />
+            <SpaceForBorders DataColumn="projects_status" />
+            <ExcelColumnFormat DataType="Number" />
+            <DataColumnSort OriginalDataColumn="projects_status" OriginalDataType="Number" DataColumn="projects_status" DataType="Number" />
+          </DataTableColumn>
+          <DataLayer ConnectionID="SP" Source="projects" QueryBuilderTableID="projects" Type="ActiveSQL" ErrorSessionVar="rdActiveSqlErrorMsg">
+            <SqlColumn ID="projects_id" DataColumn="id" DataType="Number" Caption="Project Id" />
+            <SqlColumn ID="projects_name" DataColumn="name" DataType="Text" Caption="Project Name" />
+            <SqlColumn ID="projects_fee_percentage" DataColumn="fee_percentage" DataType="Number" Caption="Fee Percentage" />
+            <SqlColumn ID="projects_created" DataColumn="created" DataType="DateTime" Caption="Created" />
+            <SqlColumn ID="projects_archived" DataColumn="archived" DataType="Number" Caption="Is Archived" />
+            <SqlColumn ID="projects_status" DataColumn="status" DataType="Number" Caption="Status" />
+          </DataLayer>
+        </DataTable>
+      </PanelContent>
+    </Panel>
+  </ExtraPanelDefinition>
 </rdSavedDashboard>
