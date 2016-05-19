@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Setting ID="_settings" InfoGoVersion="12.1.142" SavedBy="FABRIC-PC-VINNY\Vinesh" SavedAt="18/05/2016 11:15:44" EngineVersion="12.1.188-SP1">
+<Setting ID="_settings" InfoGoVersion="12.1.142" SavedBy="FABRIC-PC-VINNY\Vinesh" SavedAt="19/05/2016 09:12:31" EngineVersion="12.1.188-SP1">
   <Constants goAllowSharing="False" goAnalysisType="AnalysisGrid" goBatchSelection="False" goCustomTableSessionVars="" goDefaultAnalysisName="Untitled Analysis" goDefaultDashboardName="Untitled Dashboard" goDefaultReportName="Untitled Report" goHideColumnSelection="False" goHomeName="Menu" goMetadataIDsAnalysisGrid="" goMetadataIDsDiscovery="" goReportStarterFile="" goSchedulerEnabled="False" goThemeEditorEnabled="False" SchedulerApplicationID="InfoGO" />
   <Application Caption="Info GO" DefaultReport="InfoGo.goHome" />
   <Path AppPath="http://localhost:8080/self_service_reporting" />
@@ -20,6 +20,8 @@
     </Connection>
     <Connection ID="Catalogues" Type="MySql" MySqlServer="192.168.1.15" MySqlPort="3306" MySqlDatabase="ProcurePlusCatalogueManagement" MySqlUser="logi_self_serv" MySqlPassword="logi_self_serv">
       <Metadata ID="CatalogueItemSales" MetadataName="metaCatalogues" />
+      <Metadata ID="CatalogueItemSales2" MetadataName="CatalogueSales" />
+      <Metadata ID="CataloguesItemSales3" MetadataName="Catalogue Item Sales" />
     </Connection>
   </Connections>
   <Remark>
